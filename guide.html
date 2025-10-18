@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet - L'Élevage des Poulets de Chair</title>
+      <!-- Favicon de base -->
+<link rel="icon" type="image/x-icon" href="assettes/image.logo.png">
+
+<!-- Pour les appareils Apple -->
+<link rel="apple-touch-icon" sizes="180x180" href="assettes/image.logo.png">
+
+<!-- Pour Android -->
+<link rel="icon" type="image/png" sizes="192x192" href="assettes/image.logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== VARIABLES CSS PROFESSIONNELLES ===== */
+        :root {
+            /* Colors - Palette moderne et élégante */
+            --primary-color: #2C3E50;
+            --primary-dark: #1A252F;
+            --primary-light: #34495E;
+            --secondary-color: #E8F4FD;
+            --accent-color: #E74C3C;
+            --accent-light: #EC7063;
+            --gold-color: #F39C12;
+            --gold-light: #F7DC6F;
+            --text-dark: #2C3E50;
+            --text-light: #7F8C8D;
+            --text-muted: #BDC3C7;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --border-color: #E9ECEF;
+            --success-color: #27AE60;
+            --warning-color: #F39C12;
+            
+            /* Typography - Fonts professionnelles */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            --font-accent: 'Montserrat', sans-serif;
+            
+            /* Spacing - Système de spacing cohérent */
+            --section-padding: 6rem 0;
+            --container-max-width: 1200px;
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            --box-shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.2s ease;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+            --gradient-accent: linear-gradient(135deg, #E74C3C 0%, #EC7063 100%);
+            --gradient-gold: linear-gradient(135deg, #F39C12 0%, #F7DC6F 100%);
+            --gradient-hero: linear-gradient(135deg, rgba(44, 62, 80, 0.9) 0%, rgba(52, 73, 94, 0.8) 100%);
+        }
+
+        /* ===== BASE STYLES PROFESSIONNELS ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-fast);
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ===== HEADER PROFESSIONNEL ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(44, 62, 80, 0.1);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--box-shadow);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: var(--transition);
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-dark);
+            position: relative;
+            padding: 0.75rem 0;
+            transition: var(--transition-fast);
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            transition: var(--transition-fast);
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition-fast);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--light-gray);
+        }
+
+        /* ===== HERO SECTION PROFESSIONNEL ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--gradient-hero),
+                        url('https://images.unsplash.com/photo-1589923188651-268a6d0a11b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 8rem 0 6rem;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.8) 0%, rgba(52, 73, 94, 0.6) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-text h1 {
+            color: var(--white);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-weight: 800;
+        }
+
+        .hero-text .highlight {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            color: var(--white);
+        }
+
+        /* ===== GUIDE CONTENT ===== */
+        .guide-section {
+            padding: var(--section-padding);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+
+        .guide-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .chapter {
+            margin-bottom: 4rem;
+            padding: 3rem;
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .chapter:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow-lg);
+        }
+
+        .chapter-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        .chapter-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-accent);
+            color: var(--white);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+        }
+
+        .chapter-title {
+            margin: 0;
+            flex: 1;
+        }
+
+        .chapter-content h3 {
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .highlight-box {
+            background: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent-color);
+            margin: 1.5rem 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow);
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .info-card h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table th {
+            background: var(--primary-color);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: var(--light-gray);
+        }
+
+        .comparison-table tr:hover {
+            background: var(--secondary-color);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 4rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            transition: var(--transition);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* ===== RESPONSIVE STYLES ===== */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .chapter {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                position: relative;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                padding: 1rem 0;
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            nav li {
+                text-align: center;
+                padding: 0.75rem 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+            
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero {
+                padding: 7rem 0 3rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .chapter {
+                padding: 1.5rem;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assettes/image.logo.png" alt="">
+                    <span class="logo-text">guide d'elevage </span>
+                </div>
+               
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#fondements">Fondements</a></li>
+                        <li><a href="#cycle">Cycle de Production</a></li>
+                        <li><a href="#systemes">Systèmes d'Élevage</a></li>
+                        <li><a href="#defis">Défis et Enjeux</a></li>
+                    </ul>
+                </nav>
+               <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+               </button>
+            </div>
+        </div>
+    </header>
+
+  <script>
+    // Bloquer le clic droit
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Bloquer certaines combinaisons de touches
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+        (e.ctrlKey && (e.key === 'U' || e.key === 'S' || e.key === 'A'))
+      ) {
+        e.preventDefault();
+      }
+    });
+
+    // Empêcher le glisser-déposer
+    document.addEventListener('dragstart', e => e.preventDefault());
+
+    // Empêcher la sélection de texte
+    document.addEventListener('selectstart', e => e.preventDefault());
+
+    // Détection basique des DevTools (non fiable à 100 %)
+    setInterval(() => {
+      const threshold = 160;
+      if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+        document.body.innerHTML = '<h1>Accès refusé</h1>';
+      }
+    }, 1000);
+  </script>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-book"></i>
+                        <span>Guide Complet</span>
+                    </div>
+                    <h1>L'Élevage des <span class="highlight">Poulets de Chair</span></h1>
+                    <p>Un guide exhaustif sur les pratiques, systèmes et enjeux de l'élevage moderne des poulets à griller</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Content -->
+    <section class="guide-section" id="introduction">
+        <div class="container">
+            <div class="section-title">
+                <h2>Introduction</h2>
+                <p>Comprendre les bases de l'élevage moderne des poulets de chair</p>
+            </div>
+            <div class="guide-content">
+                <div class="chapter">
+                    <div class="chapter-content">
+                        <p>L'élevage de poulets de chair (ou poulets à griller) est une activité agricole majeure dans le monde, visant à produire une viande de qualité de manière efficace. Cet élevage est très différent de celui des poules pondeuses, tant dans les souches utilisées que dans les pratiques.</p>
+                        
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <i class="fas fa-feather-alt"></i>
+                                <h4>Souches Spécialisées</h4>
+                                <p>Génétique optimisée pour la production de viande</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <h4>Croissance Rapide</h4>
+                                <p>Poids d'abattage atteint en 35-42 jours</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-utensils"></i>
+                                <h4>Rendement Exceptionnel</h4>
+                                <p>Index de Conversion Alimentaire optimisé</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fondements -->
+    <section class="guide-section" id="fondements">
+        <div class="container">
+            <div class="section-title">
+                <h2>Les Fondements</h2>
+                <p>La souche et la génétique au cœur de l'élevage moderne</p>
+            </div>
+            <div class="guide-content">
+                <div class="chapter">
+                    <div class="chapter-header">
+                        <div class="chapter-number">1</div>
+                        <h2 class="chapter-title">La Souche et la Génétique</h2>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Les poulets de chair modernes ne sont pas des poules pondeuses. Ils proviennent de souches hybrides sélectionnées depuis des décennies pour leurs performances exceptionnelles :</p>
+                        
+                        <h3>Caractéristiques Clés</h3>
+                        <ul>
+                            <li><strong>Croissance Hyper-Rapide</strong> : Un poulet standard atteint un poids d'abattage de 2,5 kg en seulement 35 à 42 jours, contre plusieurs mois pour une race traditionnelle.</li>
+                            <li><strong>Efficacité Alimentaire</strong> : Cette performance est le résultat d'un Index de Conversion Alimentaire (ICA) optimisé (la quantité d'aliment nécessaire pour produire 1 kg de viande). Un ICA de 1,5 est aujourd'hui courant.</li>
+                            <li><strong>Morphologie Adaptée</strong> : Ils présentent une large poitrine et des cuisses charnues, conformes à la demande du marché.</li>
+                            <li><strong>Souches Principales</strong> : Les souches Cobb 500 et Ross 308 dominent le marché mondial grâce à leur robustesse et leur rendement.</li>
+                        </ul>
+                        
+                        <div class="highlight-box">
+                            <h4>À Savoir</h4>
+                            <p>L'index de conversion alimentaire (ICA) mesure l'efficacité avec laquelle l'animal transforme les aliments en viande. Un ICA de 1,5 signifie qu'il faut 1,5 kg d'aliment pour produire 1 kg de viande.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cycle de Production -->
+    <section class="guide-section" id="cycle">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cycle de Production</h2>
+                <p>Du poussin à la volaille : les étapes clés</p>
+            </div>
+            <div class="guide-content">
+                <div class="chapter">
+                    <div class="chapter-header">
+                        <div class="chapter-number">2</div>
+                        <h2 class="chapter-title">Le Cycle de Production</h2>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Un cycle d'élevage suit des étapes bien précises, de la préparation du bâtiment à l'abattage.</p>
+                        
+                        <h3>a) La Préparation du Bâtiment (10-14 jours avant l'arrivée)</h3>
+                        <ul>
+                            <li><strong>Nettoyage et Désinfection</strong> : Le bâtiment est vidé, entièrement nettoyé à haute pression et désinfecté pour éliminer tout pathogène résiduel du lot précédent. Une période de vide sanitaire est respectée.</li>
+                            <li><strong>Mise en place de la Litière</strong> : On épand une litière absorbante (généralement de la paille, des copeaux de bois ou de la rafle de maïs) sur 5 à 10 cm d'épaisseur.</li>
+                            <li><strong>Préchauffage</strong> : Les chauffages sont allumés au moins 24h à l'avance pour atteindre une température idéale de 32-34°C au niveau des poussins.</li>
+                        </ul>
+                        
+                        <h3>b) L'Arrivée des Poussins (Jour 0 - J0)</h3>
+                        <ul>
+                            <li>Les poussins d'un jour sont livrés dans des caisses et rapidement répartis dans le bâtiment.</li>
+                            <li><strong>L'Eau</strong> : Disponible immédiatement, propre et fraîche, souvent enrichie en vitamines et probiotiques.</li>
+                            <li><strong>L'Aliment</strong> : Sous forme de miettes très fines, disposé dans des assiettes d'éveil pour un accès facile.</li>
+                            <li><strong>La Lumière</strong> : Un éclairage presque continu (23h/24) les premiers jours pour les inciter à s'alimenter et boire fréquemment.</li>
+                        </ul>
+                        
+                        <h3>c) La Phase d'Élevage (J1 à J35-42)</h3>
+                        <p>C'est la phase de croissance intensive. La gestion est un équilibre constant entre plusieurs paramètres :</p>
+                        
+                        <h4>L'Alimentation</h4>
+                        <ul>
+                            <li><strong>Starter (J0-J14)</strong> : Riche en protéines (21-23%) pour le développement musculaire et des organes.</li>
+                            <li><strong>Growth (J15-J28)</strong> : Teneur en protéines légèrement réduite, énergie accrue pour la croissance.</li>
+                            <li><strong>Finisher (J29-Abattage)</strong> : Concentrée en énergie pour la finition et le dépôt de gras.</li>
+                        </ul>
+                        
+                        <h4>La Gestion de l'Environnement</h4>
+                        <ul>
+                            <li><strong>Température</strong> : Réduite progressivement d'environ 0,5°C par jour pour atteindre 20-22°C en fin de cycle.</li>
+                            <li><strong>Ventilation</strong> : Essentielle pour évacuer l'ammoniac des déjections, fournir de l'oxygène et réguler la température.</li>
+                            <li><strong>Densité</strong> : Réglementée. En conventionnel, la densité maximale dans l'UE est de 33 kg/m².</li>
+                        </ul>
+                        
+                        <h3> La Période de Jeûne et la Capture (Veille de l'abattage)</h3>
+                        <ul>
+                            <li>Les mangeoires sont retirées plusieurs heures avant la capture (généralement 8-12h) pour permettre la vidange du tube digestif.</li>
+                            <li>L'accès à l'eau est maintenu le plus longtemps possible.</li>
+                            <li>La capture est effectuée, souvent de nuit, par des équipes spécialisées qui doivent manipuler les volailles avec soin.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Systèmes d'Élevage -->
+    <section class="guide-section" id="systemes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Systèmes d'Élevage</h2>
+                <p>Les différents modes de production et leurs spécificités</p>
+            </div>
+            <div class="guide-content">
+                <div class="chapter">
+                    <div class="chapter-header">
+                        <div class="chapter-number">3</div>
+                        <h2 class="chapter-title">Les Différents Systèmes d'Élevage</h2>
+                    </div>
+                    <div class="chapter-content">
+                        <p>Il existe plusieurs modes de production, répondant à des demandes marché et des cahiers des charges différents.</p>
+                        
+                        <h3>Élevage Conventionnel (ou Standard)</h3>
+                        <ul>
+                            <li><strong>Description</strong> : Bâtiments climatisés et ventilés, sans accès à l'extérieur. C'est le système le plus répandu.</li>
+                            <li><strong>Avantages</strong> : Maîtrise totale de l'environnement, protection contre les prédateurs et les maladies aviaires extérieures, productivité élevée.</li>
+                            <li><strong>Inconvénients</strong> : Forte densité, absence de comportements naturels (picorage, bains de poussière), questions de bien-être animal.</li>
+                        </ul>
+                        
+                        <h3>Élevage Alternatif (Label Rouge, Bio, Plein Air)</h3>
+                        <ul>
+                            <li><strong>Description</strong> : Ces systèmes imposent des règles strictes :
+                                <ul>
+                                    <li>Densité réduite (max. 11 à 13 kg/m² en intérieur)</li>
+                                    <li>Accès à un parcours extérieur herbeux</li>
+                                    <li>Durée de vie allongée (81 jours minimum pour le Label Rouge)</li>
+                                    <li>Souches à croissance plus lente</li>
+                                    <li>Alimentation souvent 100% végétale et sans OGM</li>
+                                </ul>
+                            </li>
+                            <li><strong>Avantages</strong> : Meilleur bien-être animal, qualité gustative perçue comme supérieure, rémunération souvent plus stable pour l'éleveur.</li>
+                            <li><strong>Inconvénients</strong> : Coût de production plus élevé, prix de vente plus haut, plus de risques sanitaires, mortalité parfois plus importante.</li>
+                        </ul>
+                        
+                        <h3>Élevage en Liberté ou "Free-Range"</h3>
+                        <ul>
+                            <li>Similaire au plein air, mais avec un accent encore plus marqué sur l'accès permanent et facile à l'extérieur.</li>
+                        </ul>
+                        
+                        <h3>Comparaison des Systèmes</h3>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Système</th>
+                                    <th>Durée d'élevage</th>
+                                    <th>Densité (kg/m²)</th>
+                                    <th>Accès extérieur</th>
+                                    <th>Coût de production</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Conventionnel</td>
+                                    <td>35-42 jours</td>
+                                    <td>33 kg/m²</td>
+                                    <td>Non</td>
+                                    <td>Faible</td>
+                                </tr>
+                                <tr>
+                                    <td>Label Rouge</td>
+                                    <td>81+ jours</td>
+                                    <td>11 kg/m²</td>
+                                    <td>Oui</td>
+                                    <td>Élevé</td>
+                                </tr>
+                                <tr>
+                                    <td>Bio</td>
+                                    <td>81+ jours</td>
+                                    <td>10 kg/m²</td>
+                                    <td>Oui</td>
+                                    <td>Très élevé</td>
+                                </tr>
+                                <tr>
+                                    <td>Plein Air</td>
+                                    <td>56+ jours</td>
+                                    <td>13 kg/m²</td>
+                                    <td>Oui</td>
+                                    <td>Moyen</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Défis et Enjeux -->
+    <section class="guide-section" id="defis">
+        <div class="container">
+            <div class="section-title">
+                <h2>Défis et Enjeux</h2>
+                <p>Les challenges de la filière poulet de chair moderne</p>
+            </div>
+            <div class="guide-content">
+                <div class="chapter">
+                    <div class="chapter-header">
+                        <div class="chapter-number">4</div>
+                        <h2 class="chapter-title">Les Défis et les Enjeux de la Filière</h2>
+                    </div>
+                    <div class="chapter-content">
+                        <h3>Santé et Bien-être Animal</h3>
+                        <ul>
+                            <li><strong>Maladies</strong> : Gestion des pathologies comme la maladie de Marek, la coccidiose, les problèmes respiratoires (bronchite) et les boiteries (dyschondroplasie).</li>
+                            <li><strong>Bien-être</strong> : Les critiques portent sur la croissance trop rapide (problèmes cardiaques et de pattes), la densité et l'ennui. La recherche se tourne vers des souches plus robustes et l'enrichissement du milieu (perchoirs, bottes de paille).</li>
+                        </ul>
+                        
+                        <h3>Impact Environnemental</h3>
+                        <ul>
+                            <li><strong>Gestion des Fientes</strong> : Riches en azote et phosphore, elles doivent être valorisées (épandage comme engrais, méthanisation) sans polluer les sols et les nappes phréatiques.</li>
+                            <li><strong>Empreinte Carbone</strong> : Liée à la production des aliments (soja) et à la consommation d'énergie des bâtiments.</li>
+                        </ul>
+                        
+                        <h3>Rentabilité Économique</h3>
+                        <ul>
+                            <li>Les éleveurs sont souvent sous contrat avec des intégrateurs (coopératives ou industriels) qui fournissent les poussins, l'aliment, les conseils techniques et rachètent la production.</li>
+                            <li>Cela limite les risques mais aussi la marge de manœuvre et la rémunération de l'éleveur.</li>
+                        </ul>
+                        
+                        <h3>L'Abattage et la Commercialisation</h3>
+                        <ul>
+                            <li><strong>Abattage</strong> : Il suit un processus strict d'étourdissement (pour éviter toute souffrance) et d'hygiène (règlementation HACCP).</li>
+                            <li><strong>Débouchés</strong> : La viande est commercialisée sous diverses formes :
+                                <ul>
+                                    <li>Poulet Entier : Frais ou surgelé</li>
+                                    <li>Découpes : Cuisses, blancs, ailes, etc.</li>
+                                    <li>Transformés : Nuggets, saucisses, plats cuisinés</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <div class="highlight-box">
+                            <h4>Conclusion</h4>
+                            <p>L'élevage des poulets de chair est une activité complexe et techniquement exigeante. Il existe un fossé entre le modèle productiviste conventionnel, qui répond à une demande de masse pour une viande bon marché, et les modèles alternatifs (Label Rouge, Bio) qui privilégient le bien-être animal, la qualité gustative et une rémunération plus juste pour l'éleveur. Le consommateur, par son choix, influence directement l'évolution des pratiques vers une aviculture plus durable et respectueuse.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>À Propos</h3>
+                    <p>Ce guide complet sur l'élevage des poulets de chair a été créé pour informer et éduquer sur les pratiques modernes d'aviculture.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#fondements">Fondements</a></li>
+                        <li><a href="#cycle">Cycle de Production</a></li>
+                        <li><a href="#systemes">Systèmes d'Élevage</a></li>
+                        <li><a href="#defis">Défis et Enjeux</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Pour toute question ou suggestion concernant ce guide :</p>
+                    <p><i class="fas fa-envelope"></i> contactpouletdelacite@gmail.com</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Suivez-Nous</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 Guide Complet - L'Élevage des Poulets de Chair. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript pour le menu mobile et header scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('header');
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('nav');
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile menu toggle
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    mobileMenuBtn.innerHTML = nav.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+            
+            // Fermer le menu mobile en cliquant sur un lien
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    nav.classList.remove('active');
+                    if (mobileMenuBtn) mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+            
+            // Animation au scroll pour les chapitres
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observer les chapitres à animer
+            const chapters = document.querySelectorAll('.chapter');
+            chapters.forEach(chapter => {
+                chapter.style.opacity = 0;
+                chapter.style.transform = 'translateY(20px)';
+                chapter.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(chapter);
+            });
+        });
+    </script>
+    <script src=""></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* responsive.css - améliorations responsive et protection overflow */
+
+/* reset safe box-sizing */
+* { box-sizing: border-box; }
+
+/* Empêcher débordement horizontal global */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Forcer wrap sur textes trop longs */
+h1,h2,h3,h4,h5,h6,p,a,span,button {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+}
+
+/* Images/media sûrs */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main wrapper sécurité */
+.main-wrapper, .container {
+    overflow-x: hidden;
+}
+
+/* Sections horizontales : rendre explicite et safe */
+.horizontal-scroll-section {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* éviter que .scroll-container force overflow global */
+.scroll-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    min-width: 100%; /* évite que min-content provoque overflow global */
+    scroll-snap-type: x mandatory;
+}
+
+/* scroll items adaptatifs */
+.scroll-item { flex: 0 0 auto; width: 280px; max-width: 90vw; }
+
+/* small screens adjustments */
+@media (max-width: 992px) {
+    .hero { background-attachment: scroll !important; }
+    .hero-content, .about-content { grid-template-columns: 1fr !important; }
+}
+
+/* corrective utility class (appliquée par JS si overflow détecté) */
+.fix-overflow {
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+}
+
+/* léger style pour indiquer problèmes (debug, peut être retiré) */
+.debug-overflow {
+    outline: 2px dashed rgba(255, 0, 0, 0.25);
+}

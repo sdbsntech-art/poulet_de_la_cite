@@ -1,0 +1,2711 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poulet de la Cité - Élevage d'Excellence</title>
+
+    <!-- SEO basics -->
+    <meta name="description" content="Poulet de la Cité — élevage en plein air, poulets de chair de qualité supérieure, élevage respectueux et livraison directe.">
+    <meta name="keywords" content="poulet, élevage, poulet de chair, ferme, volaille, fermier, livraison">
+    <meta name="author" content="Poulet de la Cité">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://YOUR_SITE_URL/">
+
+    <!-- Mobile / theme -->
+    <meta name="theme-color" content="#8B4513">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Poulet de la Cité - Élevage d'Excellence">
+    <meta property="og:description" content="Découvrez nos poulets de
+    <meta property="og:url" content="https://YOUR_SITE_URL/">
+    <meta property="og:site_name" content="Poulet de la Cité">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589923188651-268a6d0a11b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80">
+    <meta property="og:image:alt" content="Élevage de poulets en plein air">
+    <meta property="og:image:width" content="1950">
+    <meta property="og:image:height" content="1300">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@VotreCompte">
+    <meta name="twitter:creator" content="@VotreCompte">
+    <meta name="twitter:title" content="Poulet de la Cité - Élevage d'Excellence">
+    <meta name="twitter:description" content="Poulets élevés en plein air, qualité supérieure et livraison directe.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1589923188651-268a6d0a11b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80">
+
+    <!-- Microsoft / Apple -->
+    <meta name="msapplication-TileColor" content="#8B4513">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="Poulet de la Cité">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Structured data hint (optionnel) -->
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="7 days">
+    <meta name="category" content="Food, Agriculture & Farming">
+    <meta name="coverage" content="Worldwide">
+    <meta name="target" content="all">
+    <meta name="audience" content="All">
+    <meta name="identifier-URL" content="https://YOUR_SITE_URL/">
+    <meta name="owner" content="Poulet de la Cité">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== VARIABLES CSS PROFESSIONNELLES ===== */
+        :root {
+            /* Colors - Palette moderne et élégante */
+            --primary-color: #2C3E50;
+            --primary-dark: #1A252F;
+            --primary-light: #34495E;
+            --secondary-color: #E8F4FD;
+            --accent-color: #E74C3C;
+            --accent-light: #EC7063;
+            --gold-color: #F39C12;
+            --gold-light: #F7DC6F;
+            --text-dark: #2C3E50;
+            --text-light: #7F8C8D;
+            --text-muted: #BDC3C7;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --border-color: #E9ECEF;
+            --success-color: #27AE60;
+            --warning-color: #F39C12;
+            
+            /* Typography - Fonts professionnelles */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            --font-accent: 'Montserrat', sans-serif;
+            
+            /* Spacing - Système de spacing cohérent */
+            --section-padding: 6rem 0;
+            --container-max-width: 1400px;
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            --box-shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.2s ease;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+            --gradient-accent: linear-gradient(135deg, #E74C3C 0%, #EC7063 100%);
+            --gradient-gold: linear-gradient(135deg, #F39C12 0%, #F7DC6F 100%);
+            --gradient-hero: linear-gradient(135deg, rgba(44, 62, 80, 0.9) 0%, rgba(52, 73, 94, 0.8) 100%);
+        }
+          /* ===== CORRECTION DU DÉBORDEMENT HORIZONTAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* layout safe defaults */
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* empêcher tout débordement horizontal global */
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+    background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden; /* sécurité */
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    /* safe area pour mobiles (iOS) */
+    padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/* Container principal pour contrôler la largeur */
+.main-wrapper {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Forcer le wrap sur textes/longs mots qui pourraient casser le layout */
+h1, h2, h3, h4, h5, h6, p, a, span {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+}
+
+/* ===== SECTIONS À DÉFILEMENT HORIZONTAL (conservées mais sûres) ===== */
+.horizontal-scroll-section {
+    width: 100%;
+    overflow-x: auto; /* autorise le scroll horizontal volontaire */
+    overflow-y: hidden;
+    padding: 5rem 0;
+    background: var(--secondary-color);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--light-gray);
+}
+
+/* Webkit scrollbar */
+.horizontal-scroll-section::-webkit-scrollbar { height: 8px; }
+.horizontal-scroll-section::-webkit-scrollbar-track { background: var(--light-gray); border-radius: 10px; }
+.horizontal-scroll-section::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 10px; }
+.horizontal-scroll-section::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+
+/* Container pour le contenu horizontal :
+   min-width: min-content peut provoquer overflow ; utiliser min-width: 100% pour éviter dépassement global */
+.scroll-container {
+    display: flex;
+    min-width: 100%;
+    gap: 2rem;
+    padding: 2rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+/* Éléments individuels du défilement horizontal */
+.scroll-item {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.scroll-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-lg);
+}
+
+.scroll-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.scroll-content {
+    padding: 1.5rem;
+}
+
+.scroll-content h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+.scroll-content p { font-size: 0.95rem; margin-bottom: 1rem; }
+
+/* Indicateurs */
+.scroll-indicator { display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem; }
+.scroll-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--text-muted); transition: var(--transition); cursor: pointer; }
+.scroll-dot.active { background: var(--primary-color); transform: scale(1.2); }
+
+/* petites protections supplémentaires */
+img, video, iframe { max-width: 100%; height: auto; display: block; }
+
+/* fin correction overflow */
+
+/* ===== BASE STYLES PROFESSIONNELS ===== */
+        
+        .guide_complet {
+            margin-top: 20px;
+        }
+        .guide_complet a {
+            text-decoration: none;
+        }
+        .guide_complet a .btn {
+            background: var(--gradient-gold);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        .guide_complet a .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--box-shadow-lg);
+        }
+        .guide_complet a .btn i {
+            margin-right: 8px;
+        }
+        html, body {
+            overflow-x: auto;
+            overflow-y: auto;
+            overflow-x: scroll;
+
+        }
+        .collaborer {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .collaborer a {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .collaborer a:hover {
+            text-decoration: underline;
+        }
+        .collaborer p {
+            max-width: 600px;
+            margin: 0 auto;
+            color: white;
+            line-height: 1.6;
+        }
+        
+
+       
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-fast);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Boutons professionnels */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2.5rem;
+            background: var(--gradient-accent);
+            color: var(--white);
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--box-shadow-lg);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* ===== SECTIONS TITLES ===== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+
+        /* ===== HEADER PROFESSIONNEL ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(44, 62, 80, 0.1);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--box-shadow);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: var(--transition);
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-dark);
+            position: relative;
+            padding: 0.75rem 0;
+            transition: var(--transition-fast);
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            transition: var(--transition-fast);
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta-button {
+            background: var(--gradient-accent);
+            color: var(--white);
+            padding: 0.75rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--box-shadow-lg);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition-fast);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--light-gray);
+        }
+
+        /* ===== HERO SECTION PROFESSIONNEL ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--gradient-hero),
+                        url('https://images.unsplash.com/photo-1589923188651-268a6d0a11b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 8rem 0 6rem;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.8) 0%, rgba(52, 73, 94, 0.6) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-text h1 {
+            color: var(--white);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-weight: 800;
+        }
+
+        .hero-text .highlight {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow-lg);
+            transition: var(--transition);
+        }
+
+        .hero-image-container::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            background: var(--gradient-accent);
+            border-radius: var(--border-radius-lg);
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .hero-image-container::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            background: var(--gradient-gold);
+            border-radius: var(--border-radius-lg);
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-text > * {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .hero-text > *:nth-child(1) { animation-delay: 0.1s; }
+        .hero-text > *:nth-child(2) { animation-delay: 0.2s; }
+        .hero-text > *:nth-child(3) { animation-delay: 0.3s; }
+        .hero-text > *:nth-child(4) { animation-delay: 0.4s; }
+
+        /* ===== ABOUT SECTION PROFESSIONNEL ===== */
+        .about {
+            padding: var(--section-padding);
+            background: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23E9ECEF" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            z-index: 1;
+        }
+
+        .about-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .about-text {
+            max-width: 600px;
+        }
+
+        .about-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--gradient-accent);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .about-text h3 {
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--text-light);
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .about-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow);
+        }
+
+        .about-feature-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+        }
+
+        .about-feature-text h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .about-feature-text p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--box-shadow-lg);
+        }
+
+        .about-image img {
+            width: 93%;
+            height: 550px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-hero);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 1;
+        }
+
+        .about-image:hover::before {
+            opacity: 0.1;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 3rem;
+            padding: 1rem;
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow);
+        }
+
+        .about-stat {
+            text-align: center;
+        }
+
+        .about-stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-family: var(--font-heading);
+        }
+
+        .about-stat-label {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+       
+        /* ===== QUALITY SECTION ===== */
+        .quality {
+            padding: var(--section-padding);
+            background-color: var(--secondary-color);
+        }
+
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .quality-item {
+            background-color: var(--white);
+            padding: 2.5rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .quality-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .quality-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(139, 69, 19, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: var(--transition);
+        }
+
+        .quality-item:hover .quality-icon {
+            background-color: var(--primary-color);
+            transform: rotateY(180deg);
+        }
+
+        .quality-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .quality-item:hover .quality-icon i {
+            color: var(--white);
+        }
+
+        .quality-item h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact {
+            padding: var(--section-padding);
+            background-color: var(--light-gray);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-details i {
+            width: 30px;
+            color: black;
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+        }
+
+        /* ===== FIX: champs du formulaire de contact en gris foncé ===== */
+    /* cible le formulaire de la section contact uniquement */
+    .contact .contact-form input,
+    .contact .contact-form textarea,
+    #contactForm input,
+    #contactForm textarea {
+        background: var(--white);
+        color: var(--text-dark);
+        border: 1px solid var(--border-color);
+        padding: 0.75rem 1rem;
+        border-radius: var(--border-radius);
+        font-family: var(--font-body);
+        transition: var(--transition);
+        -webkit-text-fill-color: initial; /* corrige certains navigateurs mobiles */
+    }
+
+    /* Placeholder plus lisible */
+    .contact .contact-form input::placeholder,
+    .contact .contact-form textarea::placeholder,
+    #contactForm input::placeholder,
+    #contactForm textarea::placeholder {
+        color: var(--text-light);
+        opacity: 1;
+    }
+
+    /* Focus : bordure et contraste */
+    .contact .contact-form input:focus,
+    .contact .contact-form textarea:focus,
+    #contactForm input:focus,
+    #contactForm textarea:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(44,62,80,0.06);
+        color: var(--text-dark);
+    }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 4rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* ===== RESPONSIVE STYLES ===== */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-text {
+                max-width: 100%;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .masonry-container {
+                column-count: 3;
+                column-gap: 1.2rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .masonry-container {
+                column-count: 4;
+                column-gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                position: relative;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                padding: 1rem 0;
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            nav li {
+                text-align: center;
+                padding: 0.75rem 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .button {
+                display: none;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .masonry-container {
+                column-count: 2;
+                column-gap: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero {
+                padding: 7rem 0 3rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .masonry-container {
+                column-count: 1;
+                column-gap: 1rem;
+            }
+        }
+
+        /* ===== AJOUTS / MODIFS RESPONSIVE ===== */
+        /* Empêche le débordement horizontal global (sécurisé) */
+        html, body {
+            overflow-x: hidden;
+        }
+
+        /* Forcer le retour à la ligne sur textes longs */
+        h1, h2, h3, h4, h5, h6, nav a, .logo-text {
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+            white-space: normal;
+        }
+
+        /* Autoriser les items de nav à se wraper si nécessaire */
+        nav ul {
+            flex-wrap: wrap;
+        }
+
+        /* Sécuriser toutes les images / éviter qu'elles forcent la largeur */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Empêcher les éléments absolus d'entraîner un overflow */
+        * { box-sizing: border-box; }
+
+        /* Désactiver background-attachment: fixed sur petits écrans (problèmes mobile) */
+        @media (max-width: 992px) {
+            .hero {
+                background-attachment: scroll;
+            }
+        }
+
+        /* Correction: .hero-content et .about-content sont en grid -> passer en 1 colonne sur petits écrans */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+                align-items: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            /* images trop hautes sur mobile */
+            .about-image img {
+                height: auto;
+                max-height: 420px;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                padding: 1rem 0;
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            nav li {
+                text-align: center;
+                padding: 0.75rem 0;
+            }
+
+            .mobile-menu-btn { display: block; }
+            .button { display: none; }
+
+            .hero-text h1 { font-size: 2.5rem; }
+            .section-title h2 { font-size: 2rem; }
+
+            .masonry-container { column-count: 2; column-gap: 1rem; }
+        }
+
+        @media (max-width: 576px) {
+            .about-image img { max-height: 300px; }
+            .gallery-item img { height: 200px; object-fit: cover; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .lightbox-nav { display: none; }
+        }
+
+        /* petit ajustement pour la lightbox sur petits écrans */
+        .lightbox-content { padding: 1rem; max-width: 98%; max-height: 98%; }
+
+        /* fin des ajouts CSS responsive */
+    </style>
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assettes/image.logo.png" alt="logo Poulet de la Cité">
+                    <span class="logo-text">Poulet de la Cité</span>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#products">Galerie</a></li>
+                        <li><a href="#about">Notre Élevage</a></li>
+                        <li><a href="#quality">Qualité</a></li>
+                        <li><a href="#order">Commander</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+               <div class="button">
+                <a href="#order" class="cta-button">Commander</a>
+               </div>
+               <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+               </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Professionnel -->
+    <section class="hero">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Élevage d'Excellence depuis 2018</span>
+                    </div>
+                    <h1>Poulet de Chair <span class="highlight">d'Exception</span></h1>
+                    <p>Découvrez notre élevage respectueux et nos poulets de chair de qualité supérieure, élevés en plein air avec passion et expertise.</p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn">
+                            <i class="fas fa-images"></i>
+                            Découvrir nos produits
+                        </a>
+                        <a href="#order" class="btn btn-secondary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Commander maintenant
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-container">
+                        <img src="assettes/image.logo.png" alt="Poulet de la Cité - Élevage d'Excellence">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Professionnel -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre Élevage</h2>
+                <p>Une tradition d'excellence et d'innovation depuis plus de 8 ans</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-badge">
+                        <i class="fas fa-seedling"></i>
+                        <span>Élevage Biologique Certifié</span>
+                    </div>
+                    <h3>Excellence & Bien-être Animal</h3>
+                    <p>Notre ferme familiale perpétue une tradition d'élevage respectueux depuis trois générations. Nous accordons une importance primordiale au bien-être de nos volailles et à la qualité de nos produits.</p>
+                    <p>Nos poulets de chair sont élevés en plein air, avec un accès permanent à des parcours herbeux et un espace vital généreux qui respecte leur comportement naturel.</p>
+                    <div class="guide_complet">
+                        <a href="guide.html" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-book"></i>
+                            Lire notre guide complet sur l'élevage de poulet de chair
+                        </a>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>100% Naturel</h4>
+                                <p>Alimentation sans OGM</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Plein Air</h4>
+                                <p>Espace vital généreux</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Certifié</h4>
+                                <p>Standards élevés</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Respectueux</h4>
+                                <p>Bien-être animal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#quality" class="btn">
+                        <i class="fas fa-arrow-right"></i>
+                        Découvrir notre qualité
+                    </a>
+                </div>
+                <div class="about-image">
+                    <img src="assettes/image.logo.png" alt="Notre élevage de poulets - Poulet de la Cité">
+                </div>
+            </div>
+            
+            <div class="about-stats">
+                <div class="about-stat">
+                    <div class="about-stat-number">8+</div>
+                    <div class="about-stat-label">Années d'expérience</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-number">5K+</div>
+                    <div class="about-stat-label">Poulets élevés/an</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-number">100%</div>
+                    <div class="about-stat-label">Satisfaction client</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* ===== NOUVELLE GALERIE GRID + LIGHTBOX ===== */
+        .galerie_section {
+            padding: var(--section-padding);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            cursor: pointer;
+            transition: var(--transition);
+            background-color: var(--white);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(139, 69, 19, 0.8), rgba(139, 69, 19, 0.6));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: var(--white);
+            font-size: 2rem;
+            transform: scale(0.8);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay i {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            padding: 2rem;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: var(--border-radius);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .lightbox-close:hover {
+            background: var(--primary-dark);
+            transform: scale(1.1);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .lightbox-nav:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .lightbox-prev {
+            left: -70px;
+        }
+
+        .lightbox-next {
+            right: -70px;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--white);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+
+            .gallery-item img {
+                height: 200px;
+            }
+
+            .lightbox-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .lightbox-prev {
+                left: -50px;
+            }
+
+            .lightbox-next {
+                right: -50px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .lightbox-nav {
+                display: none;
+            }
+        }
+
+        /* ===== SECTION COMMANDER ===== */
+        .order_section {
+            padding: var(--section-padding);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+        }
+
+        .order_section .section-title h2 {
+            color: var(--white);
+        }
+
+        .order_section .section-title p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .order_section .section-title h2::after {
+            background-color: var(--accent-color);
+        }
+
+        .order-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .order-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .order-form h3 {
+            color: var(--white);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--white);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(205, 133, 63, 0.2);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-light);
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .quantity-selector label {
+            margin-bottom: 0;
+            min-width: 120px;
+        }
+
+        .quantity-input {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .quantity-btn {
+            background: var(--accent-color);
+            color: var(--white);
+            border: none;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .quantity-btn:hover {
+            background: var(--primary-light);
+        }
+
+        .quantity-input input {
+            width: 60px;
+            text-align: center;
+            border: none;
+            background: transparent;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .whatsapp-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .whatsapp-section h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .whatsapp-section p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .whatsapp-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #25D366;
+            color: var(--white);
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+        }
+
+        .whatsapp-btn .btn-text {
+            flex: 1;
+        }
+
+        .whatsapp-btn .btn-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .whatsapp-btn .btn-number {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--accent-color);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(205, 133, 63, 0.3);
+        }
+
+        .submit-btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(205, 133, 63, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .order-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .order-form,
+            .whatsapp-section {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .order-form,
+            .whatsapp-section {
+                padding: 1.5rem;
+            }
+
+            .whatsapp-buttons {
+                gap: 0.75rem;
+            }
+
+            .whatsapp-btn {
+                padding: 0.75rem 1rem;
+            }
+        }
+    </style>
+<!-- ...existing code... -->
+    <!-- galerie section -->
+   <section class="galerie_section" id="products">
+    <div class="container">
+        <div class="section-title">
+            <h2>Galerie</h2>
+            <p>Découvrez notre élevage en images</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-src="assettes/FB_IMG_1755942816079.jpg">
+                <img src="assettes/FB_IMG_1755942816079.jpg" alt="Élevage de poulets en plein air">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1755942915738.jpg">
+                <img src="assettes/FB_IMG_1755942915738.jpg" alt="Poulets dans leur habitat naturel">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1755943153761.jpg">
+                <img src="assettes/FB_IMG_1755943153761.jpg" alt="Élevage respectueux des animaux">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1755943422726.jpg">
+                <img src="assettes/FB_IMG_1755943422726.jpg" alt="Poulets de chair de qualité">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1756028450643.jpg">
+                <img src="assettes/FB_IMG_1756028450643.jpg" alt="Ferme familiale traditionnelle">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1756028568958.jpg">
+                <img src="assettes/FB_IMG_1756028568958.jpg" alt="Alimentation naturelle des volailles">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1756028754785.jpg">
+                <img src="assettes/FB_IMG_1756028754785.jpg" alt="Bien-être animal prioritaire">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+            </div>
+            </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1756064943410.jpg">
+                <img src="assettes/FB_IMG_1756064943410.jpg" alt="Élevage en plein air">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1756065039171.jpg">
+                <img src="assettes/FB_IMG_1756065039171.jpg" alt="Qualité supérieure garantie">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-src="assettes/FB_IMG_1756065057404.jpg">
+                <img src="assettes/FB_IMG_1756065057404.jpg" alt="Tradition d'excellence">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-src="assettes/IMG-20250828-WA0022.jpg">
+                <img src="assettes/IMG-20250828-WA0022.jpg" alt="Poulets élevés avec passion">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-src="assettes/IMG-20250828-WA0026.jpg">
+                <img src="assettes/IMG-20250828-WA0026.jpg" alt="Livraison directe à domicile">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- Lightbox -->
+   <div class="lightbox" id="lightbox">
+       <div class="lightbox-content">
+           <button class="lightbox-close" id="lightboxClose">
+               <i class="fas fa-times"></i>
+           </button>
+           <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+               <i class="fas fa-chevron-left"></i>
+           </button>
+           <button class="lightbox-nav lightbox-next" id="lightboxNext">
+               <i class="fas fa-chevron-right"></i>
+           </button>
+           <img id="lightboxImage" src="" alt="">
+           <div class="lightbox-counter" id="lightboxCounter"></div>
+       </div>
+        </div>
+    
+   <!-- Section Commander -->
+   <section class="order_section" id="order">
+       <div class="container">
+           <div class="section-title">
+               <h2>Commander</h2>
+               <p>Passez votre commande facilement et recevez vos poulets frais</p>
+           </div>
+
+           <div class="order-content">
+               <!-- Formulaire de commande -->
+               <div class="order-form">
+                   <h3><i class="fas fa-shopping-cart"></i> Formulaire de Commande</h3>
+                   <form id="orderForm">
+                       <div class="form-row">
+                           <div class="form-group">
+                               <label for="firstName">Prénom *</label>
+                               <input type="text" id="firstName" name="firstName" required placeholder="Votre prénom">
+                           </div>
+                           <div class="form-group">
+                               <label for="lastName">Nom *</label>
+                               <input type="text" id="lastName" name="lastName" required placeholder="Votre nom">
+                           </div>
+                       </div>
+
+                       <div class="form-group">
+                           <label for="phone">Numéro de téléphone *</label>
+                           <input type="tel" id="phone" name="phone" required placeholder="Ex: 77 123 45 67">
+                       </div>
+
+                       <div class="form-group">
+                           <label for="address">Adresse complète *</label>
+                           <textarea id="address" name="address" rows="3" required placeholder="Votre adresse complète avec ville et quartier"></textarea>
+                       </div>
+
+                       <div class="quantity-selector">
+                           <label for="quantity">Quantité de poulets</label>
+                           <div class="quantity-input">
+                               <button type="button" class="quantity-btn" id="decreaseQty">-</button>
+                               <input type="number" id="quantity" name="quantity" value="1" min="1" max="50">
+                               <button type="button" class="quantity-btn" id="increaseQty">+</button>
+                           </div>
+                       </div>
+
+                       <div class="form-group">
+                           <label for="message">Message (optionnel)</label>
+                           <textarea id="message" name="message" rows="3" placeholder="Instructions spéciales, préférences..."></textarea>
+                       </div>
+
+                       <button type="submit" class="submit-btn">
+                           <i class="fas fa-paper-plane"></i> Envoyer la commande
+                       </button>
+                   </form>
+               </div>
+
+               <!-- Section WhatsApp -->
+               <div class="whatsapp-section">
+                   <h3><i class="fab fa-whatsapp"></i> Discuter sur WhatsApp</h3>
+                   <p>Préférez-vous discuter directement ? Contactez-nous via WhatsApp pour une commande rapide !</p>
+                   
+                   <div class="whatsapp-buttons">
+                       <a href="https://wa.me/221773624539" target="_blank" class="whatsapp-btn">
+                           <i class="fab fa-whatsapp"></i>
+                           <div class="btn-text">
+                               <div class="btn-title">Commander via WhatsApp</div>
+                               <div class="btn-number">77 362 45 39</div>
+                           </div>
+                       </a>
+
+                       <a href="https://wa.me/221764685865" target="_blank" class="whatsapp-btn">
+                           <i class="fab fa-whatsapp"></i>
+                           <div class="btn-text">
+                               <div class="btn-title">Commander via WhatsApp</div>
+                               <div class="btn-number">76 468 58 65</div>
+                           </div>
+                       </a>
+
+                       <a href="https://wa.me/221785577229" target="_blank" class="whatsapp-btn">
+                           <i class="fab fa-whatsapp"></i>
+                           <div class="btn-text">
+                               <div class="btn-title">Commander via WhatsApp</div>
+                               <div class="btn-number">78 557 72 29</div>
+                           </div>
+                       </a>
+                   </div>
+               </div>
+           </div>
+           <div class="collaborer">
+            <p>Vous êtes un revendeur ou un commerçant intéressé par nos produits ? <a href="collaboration.html">Collaborons</a> pour discuter des opportunités de collaboration et des tarifs spéciaux pour les achats en gros.</p>
+           </div>
+    </div>
+   </section>
+
+<!-- ...existing code... -->
+    <script>
+        // JavaScript pour le menu mobile, header scroll et carrousel automatique
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('header');
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('nav');
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile menu toggle
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    mobileMenuBtn.innerHTML = nav.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+            
+            // Fermer le menu mobile en cliquant sur un lien
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    nav.classList.remove('active');
+                    if (mobileMenuBtn) mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+            
+            // Animation au scroll pour sections restantes
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observer les éléments à animer (exclut le carrousel pour éviter conflit)
+            const animateElements = document.querySelectorAll('.about-content, .quality-item, .contact-content');
+            animateElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            // ===== GALERIE LIGHTBOX =====
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const lightboxClose = document.getElementById('lightboxClose');
+           
+
+            const lightboxPrev = document.getElementById('lightboxPrev');
+            const lightboxNext = document.getElementById('lightboxNext');
+            
+            let currentImageIndex = 0;
+            const images = Array.from(galleryItems).map(item => item.dataset.src);
+
+            function openLightbox(index) {
+                currentImageIndex = index;
+                lightboxImage.src = images[currentImageIndex];
+                lightbox.classList.add('active');
+                updateLightboxCounter();
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+            }
+
+            function nextImage() {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                updateLightboxImage();
+            }
+
+            function prevImage() {
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                updateLightboxImage();
+            }
+
+            function updateLightboxImage() {
+                lightboxImage.src = images[currentImageIndex];
+                updateLightboxCounter();
+            }
+
+            function updateLightboxCounter() {
+                lightboxCounter.textContent = `${currentImageIndex + 1} / ${images.length}`;
+            }
+
+            // Événements
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightboxNext.addEventListener('click', nextImage);
+            lightboxPrev.addEventListener('click', prevImage);
+
+            // Fermer avec Escape
+            document.addEventListener('keydown', (e) => {
+                if (lightbox.classList.contains('active')) {
+                    if (e.key === 'Escape') {
+                        closeLightbox();
+                    } else if (e.key === 'ArrowRight') {
+                        nextImage();
+                    } else if (e.key === 'ArrowLeft') {
+                        prevImage();
+                    }
+                }
+            });
+
+            // Fermer en cliquant sur le fond
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // ===== FORMULAIRE DE COMMANDE =====
+            const orderForm = document.getElementById('orderForm');
+            const quantityInput = document.getElementById('quantity');
+            const decreaseBtn = document.getElementById('decreaseQty');
+            const increaseBtn = document.getElementById('increaseQty');
+
+            // Gestion des boutons de quantité
+            if (decreaseBtn && increaseBtn && quantityInput) {
+                decreaseBtn.addEventListener('click', () => {
+                    let currentValue = parseInt(quantityInput.value);
+                    if (currentValue > 1) {
+                        quantityInput.value = currentValue - 1;
+                    }
+                });
+
+                increaseBtn.addEventListener('click', () => {
+                    let currentValue = parseInt(quantityInput.value);
+                    if (currentValue < 50) {
+                        quantityInput.value = currentValue + 1;
+                    }
+                });
+
+                // Validation de la quantité
+                quantityInput.addEventListener('input', () => {
+                    let value = parseInt(quantityInput.value);
+                    if (value < 1) quantityInput.value = 1;
+                    if (value > 50) quantityInput.value = 50;
+                });
+            }
+
+            // Soumission du formulaire
+            if (orderForm) {
+                orderForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Récupération des données du formulaire
+                    const formData = new FormData(orderForm);
+                    const orderData = {
+                        firstName: formData.get('firstName'),
+                        lastName: formData.get('lastName'),
+                        phone: formData.get('phone'),
+                        address: formData.get('address'),
+                        quantity: formData.get('quantity'),
+                        message: formData.get('message')
+                    };
+
+                    // Validation des champs requis
+                    if (!orderData.firstName || !orderData.lastName || !orderData.phone || !orderData.address) {
+                        alert('Veuillez remplir tous les champs obligatoires (*)');
+                        return;
+                    }
+
+                    // Validation du numéro de téléphone (format malien)
+                    const phoneRegex = /^(77|76|78|65|66|67|68|69)[0-9]{7}$/;
+                    const cleanPhone = orderData.phone.replace(/\s/g, '');
+                    if (!phoneRegex.test(cleanPhone)) {
+                        alert('Veuillez entrer un numéro de téléphone valide (ex: 77 123 45 67)');
+                        return;
+                    }
+
+                    // Création du message WhatsApp
+                    const whatsappMessage = `🛒 *NOUVELLE COMMANDE* 🛒
+
+👤 *Client:* ${orderData.firstName} ${orderData.lastName}
+📞 *Téléphone:* ${orderData.phone}
+📍 *Adresse:* ${orderData.address}
+🐔 *Quantité:* ${orderData.quantity} poulet(s)
+💬 *Message:* ${orderData.message || 'Aucun message'}
+
+Merci de traiter cette commande !`;
+
+                    // Encodage du message pour URL
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+                    
+                    // Ouverture de WhatsApp avec le premier numéro
+                    const whatsappUrl = `https://wa.me/223773624539?text=${encodedMessage}`;
+                    window.open(whatsappUrl, '_blank');
+                    
+                    // Message de confirmation
+                    alert('Votre commande a été envoyée ! Vous allez être redirigé vers WhatsApp pour finaliser votre commande.');
+                    
+                    // Réinitialisation du formulaire
+                    orderForm.reset();
+                    quantityInput.value = 1;
+                });
+            }
+        });
+    </script>
+<!-- ...existing code... -->
+    <!-- Quality Section -->
+    <section class="quality" id="quality">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre Engagement Qualité</h2>
+                <p>Des standards d'exigence pour une viande d'exception</p>
+            </div>
+            <div class="quality-grid">
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Élevage en Plein Air</h3>
+                    <p>Nos poulets bénéficient d'un accès permanent à l'extérieur et d'un espace vital généreux.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Alimentation Naturelle</h3>
+                    <p>Une alimentation à base de céréales sans OGM, majoritairement produite sur notre exploitation.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Certifications</h3>
+                    <p>Nos élevages sont certifiés et respectent les normes les plus strictes de bien-être animal.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Livraison Directe</h3>
+                    <p>Nous livrons directement à votre domicile pour garantir une fraîcheur optimale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- la section contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-Nous</h2>
+                <p>Une question ? N'hésitez pas à nous contacter</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Notre Ferme</h3>
+                    <p>Venez nous rencontrer à la ferme et découvrez notre méthode d'élevage respectueuse. Nous sommes fiers de partager notre passion et notre savoir-faire.</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Route de la cite eaux et fort, 12100 dalifort</p>
+                        <p><i class="fas fa-phone"></i> 77 362 45 39</p>
+                        <p><i class="fas fa-envelope"></i> contactpouletdelacite@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Ouvert du lundi au dimanche, 9h-19h </p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contact_name" class="lab">Nom *</label>
+                            <input type="text" id="contact_name" name="contact_name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact_email">Email *</label>
+                            <input type="email" id="contact_email" name="contact_email" required placeholder="Votre adresse email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact_phone">Téléphone</label>
+                            <input type="tel" id="contact_phone" name="contact_phone" placeholder="Ex: 77 123 45 67">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact_message">Message *</label>
+                            <textarea id="contact_message" name="contact_message" rows="5" required placeholder="Votre message"></textarea>
+                        </div>
+
+                        <div id="contactFeedback" role="status" aria-live="polite" style="margin-bottom:1rem; color:var(--primary-color); display:none;"></div>
+
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <script>
+>
+        // Gestion simple et sûre du formulaire de contact
+        (function(){
+            const contactForm = document.getElementById('contactForm');
+            const feedback = document.getElementById('contactFeedback');
+
+            if (!contactForm) return;
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const name = contactForm.contact_name.value.trim();
+                const email = contactForm.contact_email.value.trim();
+                const phone = contactForm.contact_phone.value.trim();
+                const message = contactForm.contact_message.value.trim();
+
+                // Validation basique
+                if (!name || !email || !message) {
+                    feedback.style.display = 'block';
+                    feedback.style.color = '#d9534f';
+                    feedback.textContent = 'Veuillez remplir les champs obligatoires : Nom, Email et Message.';
+                    return;
+                }
+
+                // Email simple validation
+                const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRe.test(email)) {
+                    feedback.style.display = 'block';
+                    feedback.style.color = '#d9534f';
+                    feedback.textContent = 'Veuillez entrer un email valide.';
+                    return;
+                }
+
+                // Ici on peut remplacer par un appel AJAX / fetch vers votre backend.
+                // Pour le moment on ouvre le client mail (fallback) et affiche message de confirmation.
+                const subject = encodeURIComponent('Message depuis le site - ' + name);
+                const body = encodeURIComponent(
+                    `Nom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\n\nMessage:\n${message}`
+                );
+
+                // fallback mailto (ouvre le client mail si configuré)
+                const mailto = `mailto:contact@pouletdelacite.fr?subject=${subject}&body=${body}`;
+                // ouvrir dans un nouvel onglet pour ne pas bloquer l'utilisateur
+                window.open(mailto, '_blank');
+
+                feedback.style.display = 'block';
+                feedback.style.color = 'var(--success-color)';
+                feedback.textContent = 'Merci ! Votre message a été préparé. Vous allez pouvoir l’envoyer depuis votre client mail.';
+
+                // Réinitialiser le formulaire après envoi
+                contactForm.reset();
+
+                // masquer le message après 6s
+                setTimeout(() => { feedback.style.display = 'none'; }, 6000);
+            }, false);
+        })();
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>À Propos</h3>
+                    <p>Poulet de la Cité est un élevage familial dédié à la production de poulets de chair de haute qualité, élevés en plein air et nourris avec des aliments naturels.</p>
+                    <p>Notre engagement envers le bien-être animal et la satisfaction client est au cœur de notre métier.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Liens Utiles</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#products">Galerie</a></li>
+                        <li><a href="#about">Notre Élevage</a></li>
+                        <li><a href="#quality">Qualité</a></li>
+                        <li><a href="#order">Commander</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Pour toute demande d'information, n'hésitez pas à nous contacter :</p>
+                    <p><i class="fas fa-envelope"></i> contactpouletdelacite@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +221 77 362 45 39 & +221 78 557 72 29</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Route de la cite eaux et foret, 12100 Dalifort</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Suivez-Nous</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 Poulet de la Cité. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+<script src="responsive.js" defer></script>
+
+  <script>
+    // Bloquer le clic droit
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Bloquer certaines combinaisons de touches
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+        (e.ctrlKey && (e.key === 'U' || e.key === 'S' || e.key === 'A'))
+      ) {
+        e.preventDefault();
+      }
+    });
+
+    // Empêcher le glisser-déposer
+    document.addEventListener('dragstart', e => e.preventDefault());
+
+    // Empêcher la sélection de texte
+    document.addEventListener('selectstart', e => e.preventDefault());
+
+    // Détection basique des DevTools (non fiable à 100 %)
+    setInterval(() => {
+      const threshold = 160;
+      if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+        document.body.innerHTML = '<h1>Accès refusé</h1>';
+      }
+    }, 1000);
+  </script>
+<!-- ANTI-INSPECT START -->
+
+<script id="anti-inspect">
+(function(){
+  'use strict';
+  // Protection handlers (contextmenu, keys, select, drag)
+  function preventAll(e){ try{ e.preventDefault(); e.stopImmediatePropagation(); }catch(_){/*safe*/} }
+  function keyHandler(e){
+    // Bloque F12, Ctrl+U, Ctrl+S, Ctrl+Shift+I/J/C, Ctrl+Shift+C etc.
+    var key = e.key || '';
+    if (key === 'F12' ||
+        (e.ctrlKey && key.toLowerCase()==='u') ||
+        (e.ctrlKey && key.toLowerCase()==='s') ||
+        (e.ctrlKey && e.shiftKey && (key.toLowerCase()==='i' || key.toLowerCase()==='j' || key.toLowerCase()==='c')) ||
+        (e.ctrlKey && key.toLowerCase()==='a' && e.metaKey===false && e.shiftKey===false)
+       ){
+      try{ e.preventDefault(); e.stopImmediatePropagation(); }catch(_){}
+      showOverlay();
+      return false;
+    }
+  }
+  function showOverlay(){
+    if (document.getElementById('antiInspectOverlay')) return;
+    var ov = document.createElement('div');
+    ov.id = 'antiInspectOverlay';
+    Object.assign(ov.style,{
+      position: 'fixed', inset: '0', background: 'rgba(0,0,0,0.95)', color: '#fff',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      zIndex: 2147483647, textAlign: 'center', padding: '20px', fontFamily: 'sans-serif'
+    });
+    ov.innerHTML = '<div style="max-width:720px"><h2 style="margin:0 0 8px">Accès restreint</h2><p style="margin:0 0 12px">Une action d'inspection a été détectée. Si vous pensez que c'est une erreur, contactez l'administrateur.</p><button id="antiInspectClose" style="padding:.5rem 1rem;border-radius:8px;border:none;background:#fff;color:#111;cursor:pointer">Fermer</button></div>';
+    document.documentElement.appendChild(ov);
+    var btn = document.getElementById('antiInspectClose');
+    if(btn) btn.addEventListener('click', function(){ ov.remove(); });
+  }
+
+  function attachHandlers(){
+    try{
+      // bloquer menu contextuel et actions de sélection / drag
+      ['contextmenu','selectstart','dragstart','auxclick'].forEach(function(ev){
+        document.addEventListener(ev, preventAll, true);
+      });
+      // empêcher clics souris usuels (bouton droit etc.)
+      document.addEventListener('mousedown', function(e){ if(e.button===2) preventAll(e); }, true);
+
+      // bloquer combinaisons clavier
+      window.addEventListener('keydown', keyHandler, true);
+      // on empêche aussi certains raccourcis via keyup/capture
+      window.addEventListener('keyup', function(e){ /* no-op but capture phase kept */ }, true);
+    }catch(ex){}
+  }
+
+  // Réapplique si quelqu'un supprime les handlers ou le script
+  function ensureAlive(){
+    attachHandlers();
+    // réappliquer si le script ou overlay est supprimé (MutationObserver simple)
+    if(window.MutationObserver){
+      var mo = new MutationObserver(function(){
+        try{ attachHandlers(); }catch(e){}
+      });
+      mo.observe(document, {childList:true, subtree:true, attributes:true});
+    }
+    // Détection basique DevTools (taille fenêtre) : affiche overlay si ouvert
+    var last = false;
+    setInterval(function(){
+      try{
+        var opened = (window.outerWidth - window.innerWidth > 160) || (window.outerHeight - window.innerHeight > 160);
+        if(opened && !last) showOverlay();
+        last = opened;
+      }catch(e){}
+    }, 1000);
+  }
+
+  // Exécution initiale
+  ensureAlive();
+
+  // Défense en profondeur : tenter de rendre la suppression plus coûteuse
+  try{
+    Object.defineProperty(window, '__antiInspectLock', { value: true, configurable: false, writable: false });
+  }catch(e){}
+})();
+</script>
+
+<!-- ANTI-INSPECT END -->
+</body>
+</html>

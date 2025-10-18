@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborations & Vente en Gros - Poulet de la Cité</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== VARIABLES CSS PROFESSIONNELLES ===== */
+        :root {
+            /* Colors - Palette moderne et élégante */
+            --primary-color: #2C3E50;
+            --primary-dark: #1A252F;
+            --primary-light: #34495E;
+            --secondary-color: #E8F4FD;
+            --accent-color: #E74C3C;
+            --accent-light: #EC7063;
+            --gold-color: #F39C12;
+            --gold-light: #F7DC6F;
+            --text-dark: #2C3E50;
+            --text-light: #7F8C8D;
+            --text-muted: #BDC3C7;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --border-color: #E9ECEF;
+            --success-color: #27AE60;
+            --warning-color: #F39C12;
+            
+            /* Typography - Fonts professionnelles */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            --font-accent: 'Montserrat', sans-serif;
+            
+            /* Spacing - Système de spacing cohérent */
+            --section-padding: 6rem 0;
+            --container-max-width: 1200px;
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            --box-shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.2s ease;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+            --gradient-accent: linear-gradient(135deg, #E74C3C 0%, #EC7063 100%);
+            --gradient-gold: linear-gradient(135deg, #F39C12 0%, #F7DC6F 100%);
+            --gradient-hero: linear-gradient(135deg, rgba(44, 62, 80, 0.9) 0%, rgba(52, 73, 94, 0.8) 100%);
+        }
+
+        /* ===== BASE STYLES PROFESSIONNELS ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-fast);
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ===== HEADER PROFESSIONNEL ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(44, 62, 80, 0.1);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--box-shadow);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: var(--transition);
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-dark);
+            position: relative;
+            padding: 0.75rem 0;
+            transition: var(--transition-fast);
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            transition: var(--transition-fast);
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta-button {
+            background: var(--gradient-accent);
+            color: var(--white);
+            padding: 0.75rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--box-shadow-lg);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition-fast);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--light-gray);
+        }
+
+        /* ===== HERO SECTION PROFESSIONNEL ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--gradient-hero),
+                        url('https://images.unsplash.com/photo-1589923188651-268a6d0a11b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 8rem 0 6rem;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.8) 0%, rgba(52, 73, 94, 0.6) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-text h1 {
+            color: var(--white);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-weight: 800;
+        }
+
+        .hero-text .highlight {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            color: var(--white);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2.5rem;
+            background: var(--gradient-accent);
+            color: var(--white);
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--box-shadow-lg);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* ===== SECTIONS TITLES ===== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+
+        /* ===== COLLABORATION SECTIONS ===== */
+        .collaboration-section {
+            padding: var(--section-padding);
+        }
+
+        .partnership-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .partnership-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partnership-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-accent);
+        }
+
+        .partnership-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-lg);
+        }
+
+        .partnership-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--white);
+            font-size: 2rem;
+        }
+
+        .partnership-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .partnership-features {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .partnership-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-light);
+        }
+
+        .partnership-features i {
+            color: var(--success-color);
+            font-size: 0.9rem;
+        }
+
+        .partnership-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 1.5rem 0;
+        }
+
+        .partnership-price span {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        /* ===== AVANTAGES SECTION ===== */
+        .advantages-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .advantage-card {
+            background: var(--white);
+            padding: 2.5rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .advantage-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow-lg);
+        }
+
+        .advantage-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(139, 69, 19, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: var(--transition);
+        }
+
+        .advantage-card:hover .advantage-icon {
+            background-color: var(--primary-color);
+            transform: rotateY(180deg);
+        }
+
+        .advantage-icon i {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .advantage-card:hover .advantage-icon i {
+            color: var(--white);
+        }
+
+        .advantage-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* ===== PROCESS SECTION ===== */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: -30px;
+            width: 60px;
+            height: 2px;
+            background: var(--gradient-accent);
+            opacity: 0.3;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-accent);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+            font-family: var(--font-heading);
+        }
+
+        /* ===== FORM SECTION ===== */
+        .form-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+        }
+
+        .form-section .section-title h2 {
+            color: var(--white);
+        }
+
+        .form-section .section-title p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-section .section-title h2::after {
+            background-color: var(--accent-color);
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--white);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(205, 133, 63, 0.2);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-light);
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--accent-color);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(205, 133, 63, 0.3);
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(205, 133, 63, 0.4);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 4rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            transition: var(--transition);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* ===== RESPONSIVE STYLES ===== */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .partnership-types {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-step:not(:last-child)::after {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                position: relative;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                padding: 1rem 0;
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            nav li {
+                text-align: center;
+                padding: 0.75rem 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-container {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero {
+                padding: 7rem 0 3rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .form-container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assettes/image.logo.png" alt="">
+                    <span class="logo-text">Poulet de la Cité</span>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#partenariats">Types de Partenariats</a></li>
+                        <li><a href="#avantages">Avantages</a></li>
+                        <li><a href="#processus">Processus</a></li>
+                        <li><a href="#contact">Devenir Partenaire</a></li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="cta-button">Devenir Partenaire</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-handshake"></i>
+                        <span>Partenariats d'Excellence</span>
+                    </div>
+                    <h1>Collaborations & <span class="highlight">Vente en Gros</span></h1>
+                    <p>Rejoignez notre réseau de partenaires privilégi
+                    <div class="hero-actions">
+                        <a href="#partenariats" class="btn">
+                            <i class="fas fa-chart-line"></i>
+                            Découvrir les Offres
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-file-signature"></i>
+                            Devenir Partenaire
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de Partenariats -->
+    <section class="collaboration-section" id="partenariats">
+        <div class="container">
+            <div class="section-title">
+                <h2>Types de Partenariats</h2>
+                <p>Choisissez la formule qui correspond le mieux à votre activité</p>
+            </div>
+            
+            <div class="partnership-types">
+                <!-- Fournisseur -->
+                <div class="partnership-card">
+                    <div class="partnership-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Fournisseur Agréé</h3>
+                    <p>Approvisionnez votre établissement avec nos produits premium</p>
+                    
+                    <ul class="partnership-features">
+                        <li><i class="fas fa-check"></i> Prix préférentiels volume</li>
+                        <li><i class="fas fa-check"></i> Livraison régulière programmée</li>
+                        <li><i class="fas fa-check"></i> Support technique dédié</li>
+                        <li><i class="fas fa-check"></i> Formation produits</li>
+                        <li><i class="fas fa-check"></i> Marketing et promotion</li>
+                    </ul>
+                    
+                    <div class="partnership-price">
+                        À partir de <span>500kg/mois</span>
+                    </div>
+                    
+                    <a href="#contact" class="btn" style="width: 100%;">
+                        <i class="fas fa-store"></i>
+                        Devenir Fournisseur
+                    </a>
+                </div>
+                
+                <!-- Distributeur -->
+                <div class="partnership-card">
+                    <div class="partnership-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Distributeur Exclusif</h3>
+                    <p>Bénéficiez d'une zone d'exclusivité pour développer votre marché</p>
+                    
+                    <ul class="partnership-features">
+                        <li><i class="fas fa-check"></i> Territoire exclusif</li>
+                        <li><i class="fas fa-check"></i> Marges avantageuses</li>
+                        <li><i class="fas fa-check"></i> Formation commerciale</li>
+                        <li><i class="fas fa-check"></i> Support marketing complet</li>
+                        <li><i class="fas fa-check"></i> Programme de fidélisation</li>
+                    </ul>
+                    
+                    <div class="partnership-price">
+                        Contrat <span>Exclusif</span>
+                    </div>
+                    
+                    <a href="#contact" class="btn" style="width: 100%;">
+                        <i class="fas fa-chart-network"></i>
+                        Devenir Distributeur
+                    </a>
+                </div>
+                
+                <!-- Vente en Gros -->
+                <div class="partnership-card">
+                    <div class="partnership-icon">
+                        <i class="fas fa-pallet"></i>
+                    </div>
+                    <h3>Vente en Gros</h3>
+                    <p>Accédez à nos tarifs les plus compétitifs pour les gros volumes</p>
+                    
+                    <ul class="partnership-features">
+                        <li><i class="fas fa-check"></i> Prix volume compétitifs</li>
+                        <li><i class="fas fa-check"></i> Livraison directe usine</li>
+                        <li><i class="fas fa-check"></i> Conditionnement sur mesure</li>
+                        <li><i class="fas fa-check"></i> Flexibilité des commandes</li>
+                        <li><i class="fas fa-check"></i> Support logistique</li>
+                    </ul>
+                    
+                    <div class="partnership-price">
+                        À partir de <span>2 tonnes/mois</span>
+                    </div>
+                    
+                    <a href="#contact" class="btn" style="width: 100%;">
+                        <i class="fas fa-industry"></i>
+                        Commander en Gros
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages Section -->
+    <section class="collaboration-section advantages-section" id="avantages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Avantages Exclusifs</h2>
+                <p>Découvrez les bénéfices de collaborer avec Poulet de la Cité</p>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Qualité Garantie</h3>
+                    <p>Produits certifiés et contrôlés selon les normes les plus strictes</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Livraison Fiable</h3>
+                    <p>Service logistique performant et respect des délais</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Prix Compétitifs</h3>
+                    <p>Tarifs avantageux adaptés à votre volume d'activité</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support Dédié</h3>
+                    <p>Équipe commerciale à votre écoute pour votre succès</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Croissance Assurée</h3>
+                    <p>Programmes de développement pour booster vos ventes</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Produit Durable</h3>
+                    <p>Engagement éthique et respect de l'environnement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processus Section -->
+    <section class="collaboration-section" id="processus">
+        <div class="container">
+            <div class="section-title">
+                <h2>Processus de Collaboration</h2>
+                <p>Comment devenir partenaire en 4 étapes simples</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Évaluation</h3>
+                    <p>Analyse de vos besoins et de votre potentiel marché</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Proposition</h3>
+                    <p>Élaboration d'une offre commerciale personnalisée</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Signature</h3>
+                    <p>Finalisation du contrat et mise en place opérationnelle</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Lancement</h3>
+                    <p>Démarrage de la collaboration et suivi régulier</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="form-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Devenir Partenaire</h2>
+                <p>Remplissez le formulaire ci-dessous et notre équipe vous contactera sous 24h</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="partnershipForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="companyName">Nom de l'entreprise *</label>
+                            <input type="text" id="companyName" name="companyName" required placeholder="Votre raison sociale">
+                        </div>
+                        <div class="form-group">
+                            <label for="activityType">Type d'activité *</label>
+                            <select id="activityType" name="activityType" required>
+                                <option value="">Sélectionnez votre activité</option>
+                                <option value="restaurant">Restaurant</option>
+                                <option value="supermarket">Supermarché</option>
+                                <option value="wholesaler">Grossiste</option>
+                                <option value="distributor">Distributeur</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Nom du responsable *</label>
+                            <input type="text" id="contactName" name="contactName" required placeholder="Votre nom complet">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Ex: 77 123 45 67">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Adresse complète *</label>
+                        <textarea id="address" name="address" rows="2" required placeholder="Adresse, ville, région"></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="partnershipType">Type de partenariat souhaité *</label>
+                            <select id="partnershipType" name="partnershipType" required>
+                                <option value="">Choisissez une option</option>
+                                <option value="supplier">Fournisseur Agréé</option>
+                                <option value="distributor">Distributeur Exclusif</option>
+                                <option value="wholesale">Vente en Gros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="monthlyVolume">Volume mensuel estimé (kg)</label>
+                            <input type="number" id="monthlyVolume" name="monthlyVolume" placeholder="Ex: 1000">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message ou questions supplémentaires</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Précisez vos besoins, attentes ou questions..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Envoyer ma demande de partenariat
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Poulet de la Cité</h3>
+                    <p>Éleveur de poulets de chair d'exception depuis 2018. Engagement qualité, respect du bien-être animal et développement durable.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Collaborations</h3>
+                    <ul class="footer-links">
+                        <li><a href="#partenariats">Types de Partenariats</a></li>
+                        <li><a href="#avantages">Avantages</a></li>
+                        <li><a href="#processus">Processus</a></li>
+                        <li><a href="#contact">Devenir Partenaire</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Commercial</h3>
+                    <p>Service Partenariats & Vente en Gros</p>
+                    <p><i class="fas fa-phone"></i> +221 77 362 45 39 & +221 78 557 72 29</p>
+                    <p><i class="fas fa-envelope"></i>contactpouletdelacite@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Route de la cite eaux et foret, 12100 Dalifort</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Suivez-Nous</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 Poulet de la Cité - Collaborations & Vente en Gros. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript pour le menu mobile et header scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('header');
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('nav');
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile menu toggle
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    mobileMenuBtn.innerHTML = nav.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+            
+            // Fermer le menu mobile en cliquant sur un lien
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    nav.classList.remove('active');
+                    if (mobileMenuBtn) mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+            
+            // Animation au scroll pour les sections
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observer les éléments à animer
+            const animateElements = document.querySelectorAll('.partnership-card, .advantage-card, .process-step');
+            animateElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Gestion du formulaire
+            const partnershipForm = document.getElementById('partnershipForm');
+            if (partnershipForm) {
+                partnershipForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Récupération des données du formulaire
+                    const formData = new FormData(partnershipForm);
+                    const partnershipData = {
+                        companyName: formData.get('companyName'),
+                        activityType: formData.get('activityType'),
+                        contactName: formData.get('contactName'),
+                        phone: formData.get('phone'),
+                        email: formData.get('email'),
+                        address: formData.get('address'),
+                        partnershipType: formData.get('partnershipType'),
+                        monthlyVolume: formData.get('monthlyVolume'),
+                        message: formData.get('message')
+                    };
+
+                    // Validation des champs requis
+                    if (!partnershipData.companyName || !partnershipData.activityType || 
+                        !partnershipData.contactName || !partnershipData.phone || 
+                        !partnershipData.email || !partnershipData.address || 
+                        !partnershipData.partnershipType) {
+                        alert('Veuillez remplir tous les champs obligatoires (*)');
+                        return;
+                    }
+
+                    // Validation du numéro de téléphone
+                    const phoneRegex = /^(77|76|78|65|66|67|68|69)[0-9]{7}$/;
+                    const cleanPhone = partnershipData.phone.replace(/\s/g, '');
+                    if (!phoneRegex.test(cleanPhone)) {
+                        alert('Veuillez entrer un numéro de téléphone valide (ex: 77 123 45 67)');
+                        return;
+                    }
+
+                    // Validation de l'email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(partnershipData.email)) {
+                        alert('Veuillez entrer une adresse email valide');
+                        return;
+                    }
+
+                    // Simulation d'envoi (à remplacer par un vrai envoi)
+                    alert('Votre demande de partenariat a été envoyée avec succès ! Notre équipe commerciale vous contactera dans les 24 heures.');
+                    
+                    // Réinitialisation du formulaire
+                    partnershipForm.reset();
+                });
+            }
+        });
+    </script>
+
+  <script>
+    // Bloquer le clic droit
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Bloquer certaines combinaisons de touches
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+        (e.ctrlKey && (e.key === 'U' || e.key === 'S' || e.key === 'A'))
+      ) {
+        e.preventDefault();
+      }
+    });
+
+    // Empêcher le glisser-déposer
+    document.addEventListener('dragstart', e => e.preventDefault());
+
+    // Empêcher la sélection de texte
+    document.addEventListener('selectstart', e => e.preventDefault());
+
+    // Détection basique des DevTools (non fiable à 100 %)
+    setInterval(() => {
+      const threshold = 160;
+      if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+        document.body.innerHTML = '<h1>Accès refusé</h1>';
+      }
+    }, 1000);
+  </script>
+<!-- ANTI-INSPECT START -->
+
+<script id="anti-inspect">
+(function(){
+  'use strict';
+  // Protection handlers (contextmenu, keys, select, drag)
+  function preventAll(e){ try{ e.preventDefault(); e.stopImmediatePropagation(); }catch(_){/*safe*/} }
+  function keyHandler(e){
+    // Bloque F12, Ctrl+U, Ctrl+S, Ctrl+Shift+I/J/C, Ctrl+Shift+C etc.
+    var key = e.key || '';
+    if (key === 'F12' ||
+        (e.ctrlKey && key.toLowerCase()==='u') ||
+        (e.ctrlKey && key.toLowerCase()==='s') ||
+        (e.ctrlKey && e.shiftKey && (key.toLowerCase()==='i' || key.toLowerCase()==='j' || key.toLowerCase()==='c')) ||
+        (e.ctrlKey && key.toLowerCase()==='a' && e.metaKey===false && e.shiftKey===false)
+       ){
+      try{ e.preventDefault(); e.stopImmediatePropagation(); }catch(_){}
+      showOverlay();
+      return false;
+    }
+  }
+  function showOverlay(){
+    if (document.getElementById('antiInspectOverlay')) return;
+    var ov = document.createElement('div');
+    ov.id = 'antiInspectOverlay';
+    Object.assign(ov.style,{
+      position: 'fixed', inset: '0', background: 'rgba(0,0,0,0.95)', color: '#fff',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      zIndex: 2147483647, textAlign: 'center', padding: '20px', fontFamily: 'sans-serif'
+    });
+    ov.innerHTML = '<div style="max-width:720px"><h2 style="margin:0 0 8px">Accès restreint</h2><p style="margin:0 0 12px">Une action d'inspection a été détectée. Si vous pensez que c'est une erreur, contactez l'administrateur.</p><button id="antiInspectClose" style="padding:.5rem 1rem;border-radius:8px;border:none;background:#fff;color:#111;cursor:pointer">Fermer</button></div>';
+    document.documentElement.appendChild(ov);
+    var btn = document.getElementById('antiInspectClose');
+    if(btn) btn.addEventListener('click', function(){ ov.remove(); });
+  }
+
+  function attachHandlers(){
+    try{
+      // bloquer menu contextuel et actions de sélection / drag
+      ['contextmenu','selectstart','dragstart','auxclick'].forEach(function(ev){
+        document.addEventListener(ev, preventAll, true);
+      });
+      // empêcher clics souris usuels (bouton droit etc.)
+      document.addEventListener('mousedown', function(e){ if(e.button===2) preventAll(e); }, true);
+
+      // bloquer combinaisons clavier
+      window.addEventListener('keydown', keyHandler, true);
+      // on empêche aussi certains raccourcis via keyup/capture
+      window.addEventListener('keyup', function(e){ /* no-op but capture phase kept */ }, true);
+    }catch(ex){}
+  }
+
+  // Réapplique si quelqu'un supprime les handlers ou le script
+  function ensureAlive(){
+    attachHandlers();
+    // réappliquer si le script ou overlay est supprimé (MutationObserver simple)
+    if(window.MutationObserver){
+      var mo = new MutationObserver(function(){
+        try{ attachHandlers(); }catch(e){}
+      });
+      mo.observe(document, {childList:true, subtree:true, attributes:true});
+    }
+    // Détection basique DevTools (taille fenêtre) : affiche overlay si ouvert
+    var last = false;
+    setInterval(function(){
+      try{
+        var opened = (window.outerWidth - window.innerWidth > 160) || (window.outerHeight - window.innerHeight > 160);
+        if(opened && !last) showOverlay();
+        last = opened;
+      }catch(e){}
+    }, 1000);
+  }
+
+  // Exécution initiale
+  ensureAlive();
+
+  // Défense en profondeur : tenter de rendre la suppression plus coûteuse
+  try{
+    Object.defineProperty(window, '__antiInspectLock', { value: true, configurable: false, writable: false });
+  }catch(e){}
+})();
+</script>
+
+<!-- ANTI-INSPECT END -->
+</body>
+</html>
