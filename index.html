@@ -2562,6 +2562,9 @@ Message: ${formData.get('message') || 'Aucun'}
                     </div>
                 </div>
             </div>
+            <div class="legal-tech">
+                <a href="politique.html">Politique de Confidentialité</a> | <a href="condition.html">Conditions d'Utilisation</a> | <a href="mentio_legale.html" target="_blank">mentions-legales</a>
+            </div>
 
             <div class="copyright">
                 &copy; 2025 Poulet de la Cité. Tous droits réservés.
@@ -2569,7 +2572,25 @@ Message: ${formData.get('message') || 'Aucun'}
         </div>
     </footer>
 <script src="responsive.js" defer></script>
-<script src=""></script>
+<style>
+    .legal-tech {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+    .legal-tech a {
+        color: var(--white);
+        text-decoration: none;
+        margin: 0 0.5rem;
+
+    }
+    .legal-tech a:hover {
+        text-decoration: underline;
+        
+    }
+
+
+</style>
 
 </body>
 </html>
