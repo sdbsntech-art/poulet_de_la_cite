@@ -21,6 +21,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="shared-nav.css">
+    <link rel="stylesheet" href="responsive.css">
     
     <style>
         /* ===== VARIABLES CSS PROFESSIONNELLES ===== */
@@ -1267,7 +1268,8 @@
                     <p><i class="fab fa-whatsapp"></i>
                         <a href="https://wa.me/221773624539" target="_blank" rel="noopener">77 362 45 39</a> ·
                         <a href="https://wa.me/221764685865" target="_blank" rel="noopener">76 468 58 65</a> ·
-                        <a href="https://wa.me/221777941218" target="_blank" rel="noopener">77 794 12 18</a>
+                        <a href="https://wa.me/221777941218" target="_blank" rel="noopener">77 794 12 18</a> ·
+                        <a href="https://wa.me/221785577229" target="_blank" rel="noopener">78 557 72 29</a>
                     </p>
                     <p><i class="fas fa-envelope"></i>contactpouletdelacite@gmail.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> Route de la cite eaux et foret, 12100 Dalifort</p>
@@ -1339,10 +1341,13 @@
             
             // Mobile menu toggle
             if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', function() {
-                    nav.classList.toggle('active');
-                    mobileMenuBtn.innerHTML = nav.classList.contains('active') 
-                        ? '<i class="fas fa-times"></i>' 
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var isOpen = nav.classList.toggle('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    mobileMenuBtn.innerHTML = isOpen
+                        ? '<i class="fas fa-times"></i>'
                         : '<i class="fas fa-bars"></i>';
                 });
             }
@@ -1442,4 +1447,4 @@
             }
         });
     </script>
-    <script src="js.js"></script>
+    <script src="responsive.js" defer></script>

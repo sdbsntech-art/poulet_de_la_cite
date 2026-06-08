@@ -55,6 +55,82 @@ img, video, iframe {
     .hero-content, .about-content { grid-template-columns: 1fr !important; }
 }
 
+/* Menu mobile cliquable */
+@media (max-width: 768px) {
+    header {
+        z-index: 1000;
+    }
+
+    .header-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    nav {
+        z-index: 1002;
+        pointer-events: none;
+    }
+
+    nav.active {
+        pointer-events: auto;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem 1.5rem;
+        min-height: 44px;
+        -webkit-tap-highlight-color: rgba(249, 115, 22, 0.2);
+        touch-action: manipulation;
+    }
+
+    .mobile-menu-btn {
+        position: relative;
+        z-index: 1003;
+        min-width: 44px;
+        min-height: 44px;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .logo-link {
+        position: relative;
+        z-index: 1003;
+        touch-action: manipulation;
+    }
+
+    /* Éviter chevauchement : bouton accueil header masqué (bouton fixe en bas) */
+    header .btn-back-home:not(.fixed):not(.block) {
+        display: none;
+    }
+
+    .wa-float-menu {
+        pointer-events: none;
+    }
+
+    .wa-float.open .wa-float-menu {
+        pointer-events: auto;
+    }
+
+    .wa-float-menu a {
+        min-height: 44px;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: rgba(37, 211, 102, 0.2);
+    }
+
+    .wa-float-toggle {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .whatsapp-btn {
+        min-height: 48px;
+        touch-action: manipulation;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+    }
+}
+
 /* corrective utility class (appliquée par JS si overflow détecté) */
 .fix-overflow {
     max-width: 100% !important;

@@ -1194,12 +1194,15 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
                 opacity: 0;
                 visibility: hidden;
                 transition: var(--transition);
+                z-index: 1002;
+                pointer-events: none;
             }
             
             nav.active {
                 transform: translateY(0);
                 opacity: 1;
                 visibility: visible;
+                pointer-events: auto;
             }
             
             nav ul {
@@ -1346,12 +1349,15 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
                 opacity: 0;
                 visibility: hidden;
                 transition: var(--transition);
+                z-index: 1002;
+                pointer-events: none;
             }
 
             nav.active {
                 transform: translateY(0);
                 opacity: 1;
                 visibility: visible;
+                pointer-events: auto;
             }
 
             nav ul {
@@ -1362,6 +1368,12 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
             nav li {
                 text-align: center;
                 padding: 0.75rem 0;
+            }
+
+            nav a {
+                display: block;
+                padding: 1rem 1.5rem;
+                min-height: 44px;
             }
 
             .mobile-menu-btn { display: block; }
@@ -1414,7 +1426,7 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
                <div class="button">
                 <a href="#order" class="cta-button">Commander</a>
                </div>
-               <button class="mobile-menu-btn" id="mobileMenuBtn">
+               <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
                </button>
             </div>
@@ -2116,6 +2128,13 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
                                <div class="btn-number">77 794 12 18</div>
                            </div>
                        </a>
+                       <a href="https://wa.me/221785577229" target="_blank" rel="noopener" class="whatsapp-btn">
+                           <i class="fab fa-whatsapp"></i>
+                           <div class="btn-text">
+                               <div class="btn-title">Commander via WhatsApp</div>
+                               <div class="btn-number">78 557 72 29</div>
+                           </div>
+                       </a>
                    </div>
                </div>
            </div>
@@ -2366,7 +2385,8 @@ Message: ${formData.get('message') || 'Aucun'}
                         <p><i class="fab fa-whatsapp"></i>
                             <a href="https://wa.me/221773624539" target="_blank" rel="noopener">77 362 45 39</a> ·
                             <a href="https://wa.me/221764685865" target="_blank" rel="noopener">76 468 58 65</a> ·
-                            <a href="https://wa.me/221777941218" target="_blank" rel="noopener">77 794 12 18</a>
+                            <a href="https://wa.me/221777941218" target="_blank" rel="noopener">77 794 12 18</a> ·
+                            <a href="https://wa.me/221785577229" target="_blank" rel="noopener">78 557 72 29</a>
                         </p>
                         <p><i class="fas fa-envelope"></i> contactpouletdelacite@gmail.com</p>
                         <p><i class="fas fa-clock"></i> Ouvert du lundi au dimanche, 9h-19h </p>
@@ -2492,7 +2512,7 @@ Message: ${formData.get('message') || 'Aucun'}
                     <h3>Contact</h3>
                     <p>Pour toute demande d'information, n'hésitez pas à nous contacter :</p>
                     <p><i class="fas fa-envelope"></i> contactpouletdelacite@gmail.com</p>
-                    <p><i class="fab fa-whatsapp"></i> +221 77 362 45 39 · +221 76 468 58 65 · +221 77 794 12 18</p>
+                    <p><i class="fab fa-whatsapp"></i> +221 77 362 45 39 · +221 76 468 58 65 · +221 77 794 12 18 · +221 78 557 72 29</p>
                     <p><i class="fas fa-map-marker-alt"></i> Route de la cite eaux et foret, 12100 Dalifort</p>
                 </div>
 
@@ -2591,11 +2611,13 @@ Message: ${formData.get('message') || 'Aucun'}
         visibility: hidden;
         transform: translateY(10px);
         transition: var(--transition);
+        pointer-events: none;
     }
     .wa-float.open .wa-float-menu {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
+        pointer-events: auto;
     }
     .wa-float-menu a {
         display: flex;
@@ -2630,22 +2652,14 @@ Message: ${formData.get('message') || 'Aucun'}
         <a href="https://wa.me/221777941218" target="_blank" rel="noopener">
             <i class="fab fa-whatsapp"></i> 77 794 12 18
         </a>
+        <a href="https://wa.me/221785577229" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> 78 557 72 29
+        </a>
     </div>
     <button class="wa-float-toggle" id="waFloatToggle" aria-label="Contacter sur WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </button>
 </div>
-<script>
-(function(){
-    var wa = document.getElementById('waFloat');
-    var btn = document.getElementById('waFloatToggle');
-    if (!wa || !btn) return;
-    btn.addEventListener('click', function(){ wa.classList.toggle('open'); });
-    document.addEventListener('click', function(e){
-        if (!wa.contains(e.target)) wa.classList.remove('open');
-    });
-})();
-</script>
 
 </body>
 </html>

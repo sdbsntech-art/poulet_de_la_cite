@@ -21,6 +21,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="shared-nav.css">
+    <link rel="stylesheet" href="responsive.css">
     
     <style>
         /* ===== VARIABLES CSS PROFESSIONNELLES ===== */
@@ -1047,7 +1048,7 @@
                     <h3>Contact</h3>
                     <p>Pour toute question ou suggestion concernant ce guide :</p>
                     <p><i class="fas fa-envelope"></i> contactpouletdelacite@gmail.com</p>
-                    <p><i class="fab fa-whatsapp"></i> +221 77 362 45 39 · +221 76 468 58 65 · +221 77 794 12 18</p>
+                    <p><i class="fab fa-whatsapp"></i> +221 77 362 45 39 · +221 76 468 58 65 · +221 77 794 12 18 · +221 78 557 72 29</p>
                 </div>
 
                 <div class="footer-column">
@@ -1118,10 +1119,13 @@
             
             // Mobile menu toggle
             if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', function() {
-                    nav.classList.toggle('active');
-                    mobileMenuBtn.innerHTML = nav.classList.contains('active') 
-                        ? '<i class="fas fa-times"></i>' 
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var isOpen = nav.classList.toggle('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    mobileMenuBtn.innerHTML = isOpen
+                        ? '<i class="fas fa-times"></i>'
                         : '<i class="fas fa-bars"></i>';
                 });
             }
@@ -1160,6 +1164,6 @@
             });
         });
     </script>
-    <script src="js.js"></script>
+    <script src="responsive.js" defer></script>
 </body>
 </html>

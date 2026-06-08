@@ -58,6 +58,12 @@ export default function HomeScreen() {
           <Text style={styles.btnText}>WhatsApp — 77 794 12 18</Text>
         </Pressable>
         <Pressable
+          style={styles.btnPrimary}
+          onPress={() => Linking.openURL('https://wa.me/221785577229')}
+        >
+          <Text style={styles.btnText}>WhatsApp — 78 557 72 29</Text>
+        </Pressable>
+        <Pressable
           style={styles.btnSecondary}
           onPress={() => Linking.openURL('https://YOUR_SITE_URL')}
         >
