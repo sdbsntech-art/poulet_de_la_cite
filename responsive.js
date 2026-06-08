@@ -1,42 +1,39 @@
-/* responsive.js - header, menu mobile, offsets */
+/* responsive.js - header, navigation pills, offsets */
 (function () {
-    function initMobileMenu() {
+    function initHeader() {
         var header = document.getElementById('header');
-        var mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        var nav = document.getElementById('nav');
-        if (!mobileMenuBtn || !nav) return;
+        if (!header) return;
 
-        mobileMenuBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            var isOpen = nav.classList.toggle('active');
-            mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            mobileMenuBtn.innerHTML = isOpen
-                ? '<i class="fas fa-times"></i>'
-                : '<i class="fas fa-bars"></i>';
+        window.addEventListener('scroll', function () {
+            header.classList.toggle('scrolled', window.scrollY > 100);
+        }, { passive: true });
+
+        var navLinks = document.querySelectorAll('nav#nav a[href^="#"]');
+        if (!navLinks.length || !('IntersectionObserver' in window)) return;
+
+        var map = [];
+        navLinks.forEach(function (link) {
+            var id = link.getAttribute('href').slice(1);
+            if (!id) return;
+            var sec = document.getElementById(id);
+            if (sec) map.push({ link: link, sec: sec });
         });
 
-        nav.querySelectorAll('a').forEach(function (link) {
-            link.addEventListener('click', function () {
-                nav.classList.remove('active');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        if (!map.length) return;
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    map.forEach(function (item) {
+                        item.link.classList.toggle('active', item.sec === entry.target);
+                    });
+                }
             });
-        });
+        }, { threshold: 0.3, rootMargin: '-90px 0px -55% 0px' });
 
-        document.addEventListener('click', function (e) {
-            if (!nav.classList.contains('active')) return;
-            if (header && header.contains(e.target)) return;
-            nav.classList.remove('active');
-            mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        map.forEach(function (item) {
+            observer.observe(item.sec);
         });
-
-        if (header) {
-            window.addEventListener('scroll', function () {
-                header.classList.toggle('scrolled', window.scrollY > 100);
-            }, { passive: true });
-        }
     }
 
     function initWaFloat() {
@@ -66,13 +63,11 @@
         if (!header) return;
         var h = header.getBoundingClientRect().height;
         document.body.style.paddingTop = h + 'px';
-        // safe bottom padding (mobile gestures)
         var bottom = Math.max(12, Math.round(window.innerHeight * 0.02));
         document.body.style.paddingBottom = 'env(safe-area-inset-bottom, ' + bottom + 'px)';
     }
 
     function clampOverflowingElements() {
-        // détecte éléments plus larges que la fenêtre et applique une classe corrective
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         var els = Array.prototype.slice.call(document.querySelectorAll('body *'));
         els.forEach(function (el) {
@@ -80,26 +75,20 @@
                 var r = el.getBoundingClientRect();
                 if (r.width > w + 1) {
                     el.classList.add('fix-overflow', 'debug-overflow');
-                    console.warn('Overflow fixer appliqué:', el, Math.round(r.width), 'px >', w, 'px');
-                } else {
-                    // retire la classe debug si plus nécessaire
-                    if (el.classList.contains('debug-overflow')) {
-                        el.classList.remove('debug-overflow');
-                    }
+                } else if (el.classList.contains('debug-overflow')) {
+                    el.classList.remove('debug-overflow');
                 }
-            } catch (e) { /* certains éléments peuvent échouer */ }
+            } catch (e) { /* ignore */ }
         });
     }
 
-    // Exécutions initiales
     window.addEventListener('load', function () {
-        initMobileMenu();
+        initHeader();
         initWaFloat();
         updateBodyOffsets();
         clampOverflowingElements();
-    }, {passive: true});
+    }, { passive: true });
 
-    // Au redimensionnement et rotation
     var to;
     window.addEventListener('resize', function () {
         clearTimeout(to);
@@ -109,9 +98,9 @@
         }, 150);
     });
 
-    // observe mutations (chargement d'images, contenu dynamique)
     if (window.MutationObserver) {
         var mo = new MutationObserver(function () {
+            updateBodyOffsets();
             clampOverflowingElements();
         });
         mo.observe(document.body, { childList: true, subtree: true, attributes: true });

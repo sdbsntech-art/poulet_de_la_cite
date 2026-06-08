@@ -1,9 +1,7 @@
 /* responsive.css - améliorations responsive et protection overflow */
 
-/* reset safe box-sizing */
 * { box-sizing: border-box; }
 
-/* Empêcher débordement horizontal global */
 html, body {
     width: 100%;
     max-width: 100%;
@@ -11,7 +9,6 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Forcer wrap sur textes trop longs */
 h1,h2,h3,h4,h5,h6,p,a,span,button {
     word-break: break-word;
     overflow-wrap: break-word;
@@ -19,88 +16,157 @@ h1,h2,h3,h4,h5,h6,p,a,span,button {
     white-space: normal;
 }
 
-/* Images/media sûrs */
 img, video, iframe {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Main wrapper sécurité */
 .main-wrapper, .container {
     overflow-x: hidden;
 }
 
-/* Sections horizontales : rendre explicite et safe */
 .horizontal-scroll-section {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-/* éviter que .scroll-container force overflow global */
 .scroll-container {
     display: flex;
     gap: 1.5rem;
     padding: 1.5rem;
-    min-width: 100%; /* évite que min-content provoque overflow global */
+    min-width: 100%;
     scroll-snap-type: x mandatory;
 }
 
-/* scroll items adaptatifs */
 .scroll-item { flex: 0 0 auto; width: 280px; max-width: 90vw; }
 
-/* small screens adjustments */
 @media (max-width: 992px) {
     .hero { background-attachment: scroll !important; }
     .hero-content, .about-content { grid-template-columns: 1fr !important; }
 }
 
-/* Menu mobile cliquable */
+/* ===== Navigation mobile : pills défilantes (sans burger) ===== */
+.mobile-menu-btn {
+    display: none !important;
+}
+
 @media (max-width: 768px) {
     header {
         z-index: 1000;
     }
 
+    header .button,
+    header > .container > .header-content > .cta-button {
+        display: none !important;
+    }
+
     .header-content {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 0 !important;
         position: relative;
-        z-index: 1;
     }
 
-    nav {
-        z-index: 1002;
-        pointer-events: none;
-    }
-
-    nav.active {
-        pointer-events: auto;
-    }
-
-    nav a {
-        display: block;
-        padding: 1rem 1.5rem;
-        min-height: 44px;
-        -webkit-tap-highlight-color: rgba(249, 115, 22, 0.2);
-        touch-action: manipulation;
-    }
-
-    .mobile-menu-btn {
-        position: relative;
-        z-index: 1003;
-        min-width: 44px;
-        min-height: 44px;
-        touch-action: manipulation;
-        -webkit-tap-highlight-color: transparent;
+    header .btn-back-home:not(.fixed):not(.block) {
+        display: inline-flex !important;
+        padding: 0.45rem 0.7rem;
+        margin-left: auto;
+        font-size: 0.78rem;
+        flex-shrink: 0;
     }
 
     .logo-link {
-        position: relative;
-        z-index: 1003;
+        flex: 1;
+        min-width: 0;
         touch-action: manipulation;
     }
 
-    /* Éviter chevauchement : bouton accueil header masqué (bouton fixe en bas) */
-    header .btn-back-home:not(.fixed):not(.block) {
+    .logo img {
+        height: 42px !important;
+    }
+
+    .logo-text {
+        font-size: 1.1rem !important;
+    }
+
+    nav#nav {
+        position: static !important;
+        order: 10;
+        flex: 0 0 100%;
+        width: 100%;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        pointer-events: auto !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        padding: 0 0 0.35rem !important;
+        margin: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        z-index: auto;
+    }
+
+    nav#nav::-webkit-scrollbar {
         display: none;
+    }
+
+    nav#nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.45rem;
+        padding: 0.2rem 0.25rem 0.45rem;
+        margin: 0;
+        width: max-content;
+        min-width: 100%;
+    }
+
+    nav#nav li {
+        flex: 0 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav#nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0.95rem;
+        min-height: 40px;
+        background: #FAF6F1;
+        border: 1px solid rgba(92, 61, 46, 0.14);
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        white-space: nowrap;
+        color: #5C3D2E;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: rgba(249, 115, 22, 0.15);
+        box-shadow: 0 2px 8px rgba(92, 61, 46, 0.06);
+    }
+
+    nav#nav a::before {
+        display: none !important;
+    }
+
+    nav#nav a:hover,
+    nav#nav a.active {
+        background: linear-gradient(135deg, #F97316, #ea580c);
+        color: #fff !important;
+        border-color: transparent;
+        box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+    }
+
+    nav#nav a[href="#order"],
+    nav#nav a[href="#contact"].nav-cta {
+        background: linear-gradient(135deg, #5C3D2E, #3D2817);
+        color: #fff !important;
+        border-color: transparent;
     }
 
     .wa-float-menu {
@@ -131,13 +197,11 @@ img, video, iframe {
     }
 }
 
-/* corrective utility class (appliquée par JS si overflow détecté) */
 .fix-overflow {
     max-width: 100% !important;
     overflow-wrap: break-word !important;
 }
 
-/* léger style pour indiquer problèmes (debug, peut être retiré) */
 .debug-overflow {
     outline: 2px dashed rgba(255, 0, 0, 0.25);
 }

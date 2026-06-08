@@ -938,9 +938,6 @@
                 </nav>
                 <a href="index.html" class="btn-back-home"><i class="fas fa-home"></i> <span class="label">Accueil</span></a>
                 <a href="#contact" class="cta-button">Devenir Partenaire</a>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
             </div>
         </div>
     </header>
@@ -1327,38 +1324,13 @@
          // JavaScript pour le menu mobile et header scroll
          document.addEventListener('DOMContentLoaded', function() {
             const header = document.getElementById('header');
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const nav = document.getElementById('nav');
             
-            // Header scroll effect
             window.addEventListener('scroll', function() {
                 if (window.scrollY > 100) {
                     header.classList.add('scrolled');
                 } else {
                     header.classList.remove('scrolled');
                 }
-            });
-            
-            // Mobile menu toggle
-            if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    var isOpen = nav.classList.toggle('active');
-                    mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-                    mobileMenuBtn.innerHTML = isOpen
-                        ? '<i class="fas fa-times"></i>'
-                        : '<i class="fas fa-bars"></i>';
-                });
-            }
-            
-            // Fermer le menu mobile en cliquant sur un lien
-            const navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    nav.classList.remove('active');
-                    if (mobileMenuBtn) mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                });
             });
             
             // Animation au scroll pour les sections
