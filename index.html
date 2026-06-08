@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poulet de la Cité - Élevage d'Excellence</title>
+    <title>Le Poulailler - Élevage d'Excellence</title>
 
     <!-- SEO basics -->
-    <meta name="description" content="Poulet de la Cité — élevage en plein air, poulets de chair de qualité supérieure, élevage respectueux et livraison directe.">
-    <meta name="keywords" content="poulet, élevage, poulet de chair, ferme, volaille, fermier, livraison">
-    <meta name="author" content="Poulet de la Cité">
+    <meta name="description" content="Le Poulailler — élevage en plein air, poulets de chair de qualité supérieure, élevage respectueux et livraison directe.">
+    <meta name="keywords" content="poulet, élevage, poulet de chair, ferme, volaille, fermier, livraison, poulailler">
+    <meta name="author" content="Le Poulailler">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://YOUR_SITE_URL/">
 
     <!-- Mobile / theme -->
-    <meta name="theme-color" content="#8B4513">
+    <meta name="theme-color" content="#F97316">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,10 @@
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:locale" content="fr_FR">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Poulet de la Cité - Élevage d'Excellence">
-    <meta property="og:description" content="Découvrez nos poulets de
+    <meta property="og:title" content="Le Poulailler - Élevage d'Excellence">
+    <meta property="og:description" content="Découvrez nos poulets de chair élevés en plein air avec passion au Poulailler.">
     <meta property="og:url" content="https://YOUR_SITE_URL/">
-    <meta property="og:site_name" content="Poulet de la Cité">
+    <meta property="og:site_name" content="Le Poulailler">
     <meta property="og:image" content="https://images.unsplash.com/photo-1589923188651-268a6d0a11b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80">
     <meta property="og:image:alt" content="Élevage de poulets en plein air">
     <meta property="og:image:width" content="1950">
@@ -34,15 +34,17 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@VotreCompte">
     <meta name="twitter:creator" content="@VotreCompte">
-    <meta name="twitter:title" content="Poulet de la Cité - Élevage d'Excellence">
+    <meta name="twitter:title" content="Le Poulailler - Élevage d'Excellence">
     <meta name="twitter:description" content="Poulets élevés en plein air, qualité supérieure et livraison directe.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1589923188651-268a6d0a11b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80">
 
     <!-- Microsoft / Apple -->
-    <meta name="msapplication-TileColor" content="#8B4513">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="apple-mobile-web-app-title" content="Poulet de la Cité">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#5C3D2E">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Le Poulailler">
+    <link rel="apple-touch-icon" href="assettes/logo-le-poulailler.png">
 
     <!-- Structured data hint (optionnel) -->
     <meta name="distribution" content="global">
@@ -53,15 +55,10 @@
     <meta name="target" content="all">
     <meta name="audience" content="All">
     <meta name="identifier-URL" content="https://YOUR_SITE_URL/">
-    <meta name="owner" content="Poulet de la Cité">
-    <!-- Favicon de base -->
-<link rel="icon" type="image/x-icon" href="assettes/image.logo.png">
-
-<!-- Pour les appareils Apple -->
-<link rel="apple-touch-icon" sizes="180x180" href="assettes/image.logo.png">
-
-<!-- Pour Android -->
-<link rel="icon" type="image/png" sizes="192x192" href="assettes/image.logo.png">
+    <meta name="owner" content="Le Poulailler">
+    <link rel="icon" type="image/png" href="assettes/logo-le-poulailler.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assettes/logo-le-poulailler.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assettes/logo-le-poulailler.png">
 
     
     <!-- Fonts -->
@@ -77,14 +74,17 @@
         /* ===== VARIABLES CSS PROFESSIONNELLES ===== */
         :root {
             /* Colors - Palette moderne et élégante */
-            --primary-color: #2C3E50;
-            --primary-dark: #1A252F;
-            --primary-light: #34495E;
-            --secondary-color: #E8F4FD;
-            --accent-color: #E74C3C;
-            --accent-light: #EC7063;
-            --gold-color: #F39C12;
-            --gold-light: #F7DC6F;
+            --primary-color: #5C3D2E;
+            --primary-dark: #3D2817;
+            --primary-light: #7A5540;
+            --secondary-color: #FAF6F1;
+            --accent-color: #F97316;
+            --accent-light: #FB923C;
+            --gold-color: #D4A574;
+            --gold-light: #E8C9A0;
+            --brand-orange: #F97316;
+            --brand-brown: #5C3D2E;
+            --brand-tan: #D4A574;
             --text-dark: #2C3E50;
             --text-light: #7F8C8D;
             --text-muted: #BDC3C7;
@@ -1178,38 +1178,60 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
         }
 
         @media (max-width: 768px) {
-            #nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100vh;
-        transform: translateY(-100%);
-        transition: transform 0.28s ease, opacity 0.28s ease;
-        opacity: 0;
-        background: var(--white);
-        z-index: 1100;
-        padding-top: 84px; /* laisse la place au header */
-        overflow-y: auto;
-      }
-
-      #nav.active {
-        transform: translateY(0);
-        opacity: 1;
-      }
-
-      #nav ul {
-        flex-direction: column;
-        gap: 0;
-        padding: 1rem 1.25rem;
-      }
-
-      #nav li {
-        padding: 0.75rem 0;
-      }
-
-      /* s'assurer que le bouton mobile est visible */
-      .mobile-menu-btn { display: block; z-index: 1200; position: relative; }
+            .header-content {
+                position: relative;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                padding: 1rem 0;
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            nav li {
+                text-align: center;
+                padding: 0.75rem 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .button {
+                display: none;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .masonry-container {
+                column-count: 2;
+                column-gap: 1rem;
+            }
         }
 
         @media (max-width: 576px) {
@@ -1364,16 +1386,21 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
         /* fin des ajouts CSS responsive */
     </style>
 <link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="slider.css">
+<link rel="stylesheet" href="shared-nav.css">
 </head>
+<script>
+    
+</script>
 <body>
     <!-- Header -->
     <header id="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <img src="assettes/image.logo.png" alt="logo Poulet de la Cité">
-                    <span class="logo-text">Poulet de la Cité</span>
-                </div>
+                <a href="index.html" class="logo logo-link">
+                    <img src="assettes/logo-le-poulailler.png" alt="logo Le Poulailler">
+                    <span class="logo-text">Le Poulailler</span>
+                </a>
                 <nav id="nav">
                     <ul>
                         <li><a href="#">Accueil</a></li>
@@ -1423,7 +1450,7 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
                 </div>
                 <div class="hero-image">
                     <div class="hero-image-container">
-                        <img src="assettes/image.logo.png" alt="Poulet de la Cité - Élevage d'Excellence">
+                        <img src="assettes/logo-le-poulailler.png" alt="Le Poulailler - Élevage d'Excellence">
                     </div>
                 </div>
             </div>
@@ -1498,7 +1525,7 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
                     </a>
                 </div>
                 <div class="about-image">
-                    <img src="assettes/image.logo.png" alt="Notre élevage de poulets - Poulet de la Cité">
+                    <img src="assettes/logo-le-poulailler.png" alt="Notre élevage de poulets - Le Poulailler">
                 </div>
             </div>
             
@@ -1969,87 +1996,25 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
     </style>
 <!-- ...existing code... -->
     <!-- galerie section -->
-   <section class="galerie_section" id="products">
+   <section class="chic-slider-section galerie_section" id="products">
     <div class="container">
         <div class="section-title">
             <h2>Galerie</h2>
-            <p>Découvrez notre élevage en images</p>
+            <p>Découvrez notre élevage — vlog &amp; moments forts</p>
         </div>
 
-        <div class="gallery-grid">
-            <div class="gallery-item" data-src="assettes/FB_IMG_1755942816079.jpg">
-                <img src="assettes/FB_IMG_1755942816079.jpg" alt="Élevage de poulets en plein air">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1755942915738.jpg">
-                <img src="assettes/FB_IMG_1755942915738.jpg" alt="Poulets dans leur habitat naturel">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1755943153761.jpg">
-                <img src="assettes/FB_IMG_1755943153761.jpg" alt="Élevage respectueux des animaux">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1755943422726.jpg">
-                <img src="assettes/FB_IMG_1755943422726.jpg" alt="Poulets de chair de qualité">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1756028450643.jpg">
-                <img src="assettes/FB_IMG_1756028450643.jpg" alt="Ferme familiale traditionnelle">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1756028568958.jpg">
-                <img src="assettes/FB_IMG_1756028568958.jpg" alt="Alimentation naturelle des volailles">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-                </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1756028754785.jpg">
-                <img src="assettes/FB_IMG_1756028754785.jpg" alt="Bien-être animal prioritaire">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-            </div>
-            </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1756064943410.jpg">
-                <img src="assettes/FB_IMG_1756064943410.jpg" alt="Élevage en plein air">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1756065039171.jpg">
-                <img src="assettes/FB_IMG_1756065039171.jpg" alt="Qualité supérieure garantie">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item" data-src="assettes/FB_IMG_1756065057404.jpg">
-                <img src="assettes/FB_IMG_1756065057404.jpg" alt="Tradition d'excellence">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item" data-src="assettes/IMG-20250828-WA0022.jpg">
-                <img src="assettes/IMG-20250828-WA0022.jpg" alt="Poulets élevés avec passion">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item" data-src="assettes/IMG-20250828-WA0026.jpg">
-                <img src="assettes/IMG-20250828-WA0026.jpg" alt="Livraison directe à domicile">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
+        <div class="chic-slider-wrapper">
+            <div class="chic-slider" id="chicSlider"></div>
+            <div class="slider-progress" id="sliderProgress"></div>
         </div>
+
+        <div class="slider-controls">
+            <button class="slider-btn" id="sliderPrev" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+            <span class="slider-counter" id="sliderCounter">1 / 16</span>
+            <button class="slider-autoplay-btn" id="autoplayBtn" aria-label="Pause/Lecture"><i class="fas fa-pause"></i></button>
+            <button class="slider-btn" id="sliderNext" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
     </div>
    </section>
 
@@ -2130,21 +2095,25 @@ img, video, iframe { max-width: 100%; height: auto; display: block; }
                    <p>Préférez-vous discuter directement ? Contactez-nous via WhatsApp pour une commande rapide !</p>
                    
                    <div class="whatsapp-buttons">
-                       <a href="https://wa.me/221773624539" target="_blank" class="whatsapp-btn">
+                       <a href="https://wa.me/221773624539" target="_blank" rel="noopener" class="whatsapp-btn">
                            <i class="fab fa-whatsapp"></i>
                            <div class="btn-text">
                                <div class="btn-title">Commander via WhatsApp</div>
                                <div class="btn-number">77 362 45 39</div>
                            </div>
                        </a>
-
-                     
-
-                       <a href="https://wa.me/221785577229" target="_blank" class="whatsapp-btn">
+                       <a href="https://wa.me/221764685865" target="_blank" rel="noopener" class="whatsapp-btn">
                            <i class="fab fa-whatsapp"></i>
                            <div class="btn-text">
                                <div class="btn-title">Commander via WhatsApp</div>
-                               <div class="btn-number">78 557 72 29</div>
+                               <div class="btn-number">76 468 58 65</div>
+                           </div>
+                       </a>
+                       <a href="https://wa.me/221777941218" target="_blank" rel="noopener" class="whatsapp-btn">
+                           <i class="fab fa-whatsapp"></i>
+                           <div class="btn-text">
+                               <div class="btn-title">Commander via WhatsApp</div>
+                               <div class="btn-number">77 794 12 18</div>
                            </div>
                        </a>
                    </div>
@@ -2196,7 +2165,7 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
 
       const quantityInput = document.getElementById('quantity');
-      const whatsappNumber = '223773624539'; // numéro utilisé précédemment
+      const whatsappNumber = '221773624539';
 
       // minimal validation (keeps previous checks if present in other script)
       const firstName = orderForm.firstName ? orderForm.firstName.value.trim() : '';
@@ -2222,9 +2191,8 @@ Adresse: ${address}
 Quantité: ${qty}
 Message: ${formData.get('message') || 'Aucun'}
 `;
-                   const encoded = encodeURIComponent(whatsappMessage);
-          const whatsappUrl =
-
+          const encoded = encodeURIComponent(whatsappMessage);
+          const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encoded}`;
           window.open(whatsappUrl, '_blank');
           alert('Votre commande a été envoyée ! Vous allez être redirigé vers WhatsApp.');
           orderForm.reset();
@@ -2236,7 +2204,7 @@ Message: ${formData.get('message') || 'Aucun'}
           const formData = new FormData(orderForm);
           const qty = quantityInput ? quantityInput.value : '';
           const whatsappMessage = `🛒 NOUVELLE COMMANDE (SANS CONFIRMATION FORM) - ${firstName} ${lastName} - ${phone} - ${address} - qty ${qty}`;
-          window.open(`https://wa.me/223773624539?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+          window.open(`https://wa.me/221773624539?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
           alert('Impossible d’envoyer via Formspree, la commande a été ouverte sur WhatsApp en fallback.');
         }
       );
@@ -2395,7 +2363,11 @@ Message: ${formData.get('message') || 'Aucun'}
                     <p>Venez nous rencontrer à la ferme et découvrez notre méthode d'élevage respectueuse. Nous sommes fiers de partager notre passion et notre savoir-faire.</p>
                     <div class="contact-details">
                         <p><i class="fas fa-map-marker-alt"></i> Route de la cite eaux et fort, 12100 dalifort</p>
-                        <p><i class="fas fa-phone"></i> 77 362 45 39 & 78 557 72 29</p>
+                        <p><i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/221773624539" target="_blank" rel="noopener">77 362 45 39</a> ·
+                            <a href="https://wa.me/221764685865" target="_blank" rel="noopener">76 468 58 65</a> ·
+                            <a href="https://wa.me/221777941218" target="_blank" rel="noopener">77 794 12 18</a>
+                        </p>
                         <p><i class="fas fa-envelope"></i> contactpouletdelacite@gmail.com</p>
                         <p><i class="fas fa-clock"></i> Ouvert du lundi au dimanche, 9h-19h </p>
                     </div>
@@ -2494,17 +2466,22 @@ Message: ${formData.get('message') || 'Aucun'}
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assettes/logo-le-poulailler.png" alt="Le Poulailler">
+                    </a>
                     <h3>À Propos</h3>
-                    <p>Poulet de la Cité est un élevage familial dédié à la production de poulets de chair de haute qualité, élevés en plein air et nourris avec des aliments naturels.</p>
+                    <p>Le Poulailler est un élevage familial dédié à la production de poulets de chair de haute qualité, élevés en plein air et nourris avec des aliments naturels.</p>
                     <p>Notre engagement envers le bien-être animal et la satisfaction client est au cœur de notre métier.</p>
                 </div>
 
                 <div class="footer-column">
                     <h3>Liens Utiles</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Accueil</a></li>
+                        <li><a href="index.html">Accueil</a></li>
                         <li><a href="#products">Galerie</a></li>
                         <li><a href="#about">Notre Élevage</a></li>
+                        <li><a href="guide.html">Documentation</a></li>
+                        <li><a href="collaboration.html">Collaborations</a></li>
                         <li><a href="#quality">Qualité</a></li>
                         <li><a href="#order">Commander</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -2515,7 +2492,7 @@ Message: ${formData.get('message') || 'Aucun'}
                     <h3>Contact</h3>
                     <p>Pour toute demande d'information, n'hésitez pas à nous contacter :</p>
                     <p><i class="fas fa-envelope"></i> contactpouletdelacite@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +221 77 362 45 39 & +221 78 557 72 29</p>
+                    <p><i class="fab fa-whatsapp"></i> +221 77 362 45 39 · +221 76 468 58 65 · +221 77 794 12 18</p>
                     <p><i class="fas fa-map-marker-alt"></i> Route de la cite eaux et foret, 12100 Dalifort</p>
                 </div>
 
@@ -2542,10 +2519,12 @@ Message: ${formData.get('message') || 'Aucun'}
             </div>
 
             <div class="copyright">
-                &copy; 2025 Poulet de la Cité. Tous droits réservés.
+                &copy; 2026 Le Poulailler. Tous droits réservés.
             </div>
         </div>
     </footer>
+<script src="slider.js" defer></script>
+<script src="pwa.js" defer></script>
 <script src="responsive.js" defer></script>
 <style>
     .legal-tech {
@@ -2565,119 +2544,108 @@ Message: ${formData.get('message') || 'Aucun'}
     }
 
 
+    .contact-details a {
+        color: var(--accent-color);
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .contact-details a:hover {
+        text-decoration: underline;
+    }
+
+    /* Bouton WhatsApp flottant */
+    .wa-float {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        z-index: 8000;
+    }
+    .wa-float-toggle {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background: #25D366;
+        color: white;
+        border: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wa-float-toggle:hover {
+        transform: scale(1.08);
+    }
+    .wa-float-menu {
+        position: absolute;
+        bottom: 70px;
+        right: 0;
+        background: white;
+        border-radius: 14px;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+        padding: 0.75rem;
+        min-width: 220px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: var(--transition);
+    }
+    .wa-float.open .wa-float-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .wa-float-menu a {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.65rem 0.85rem;
+        border-radius: 10px;
+        color: var(--text-dark);
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: var(--transition-fast);
+    }
+    .wa-float-menu a:hover {
+        background: #f0fdf4;
+        color: #25D366;
+    }
+    .wa-float-menu a i {
+        color: #25D366;
+        font-size: 1.2rem;
+    }
 </style>
 
-    <!-- Mobile nav CSS + JS (robuste) -->
-    <style>
-    /* amélioration mobile nav */
-    @media (max-width: 768px) {
-      header { position: fixed; top:0; left:0; right:0; z-index:1200; }
-      .header-content { padding: 0.8rem 0; }
-      nav#nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100vh;
-        transform: translateY(-100%);
-        transition: transform 0.32s ease, opacity 0.28s ease;
-        opacity: 0;
-        background: var(--white);
-        z-index: 1100;
-        padding-top: 84px; /* laisse la place au header */
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-      }
-      nav#nav.active {
-        transform: translateY(0);
-        opacity: 1;
-      }
-      nav#nav ul { flex-direction: column; gap: 0; padding: 1.25rem; }
-      nav#nav li { padding: 0.75rem 0; border-bottom: 1px solid rgba(0,0,0,0.04); }
-      .mobile-menu-btn { display: block; z-index: 1205; position: relative; background: transparent; border: none; }
-      /* ensure nav links readable */
-      nav#nav a { display:block; padding: 0.6rem 0; color: var(--primary-color); }
-    }
-    </style>
-
-    <script>
-    (function(){
-      // attendre DOM complet
-      document.addEventListener('DOMContentLoaded', function () {
-        var btn = document.getElementById('mobileMenuBtn');
-        var nav = document.getElementById('nav');
-        var header = document.getElementById('header');
-        if (!btn || !nav) return;
-
-        // Accessibilité
-        btn.setAttribute('aria-controls','nav');
-        btn.setAttribute('aria-expanded','false');
-        btn.setAttribute('aria-label','Ouvrir le menu');
-
-        function lockScroll(lock){
-          if (lock) {
-            document.documentElement.style.overflow = 'hidden';
-            document.body.style.overflow = 'hidden';
-          } else {
-            document.documentElement.style.overflow = '';
-            document.body.style.overflow = '';
-          }
-        }
-
-        function openNav(){
-          nav.classList.add('active');
-          btn.setAttribute('aria-expanded','true');
-          btn.innerHTML = '<i class="fas fa-times"></i>';
-          lockScroll(true);
-        }
-
-        function closeNav(){
-          nav.classList.remove('active');
-          btn.setAttribute('aria-expanded','false');
-          btn.innerHTML = '<i class="fas fa-bars"></i>';
-          lockScroll(false);
-        }
-
-        btn.addEventListener('click', function(e){
-          e.preventDefault();
-          if (nav.classList.contains('active')) closeNav(); else openNav();
-        }, false);
-
-        // fermer le menu en cliquant sur un lien (sauf si lien a target="_blank")
-        Array.prototype.forEach.call(nav.querySelectorAll('a'), function(a){
-          a.addEventListener('click', function(e){
-            // si lien interne, fermer
-            if (a.target !== '_blank') {
-              closeNav();
-            }
-          }, false);
-        });
-
-        // fermer avec Escape
-        document.addEventListener('keydown', function(e){
-          if (e.key === 'Escape' && nav.classList.contains('active')) {
-            closeNav();
-          }
-        }, false);
-
-        // fermer au resize > breakpoint
-        var resizeTO;
-        window.addEventListener('resize', function(){
-          clearTimeout(resizeTO);
-          resizeTO = setTimeout(function(){
-            if (window.innerWidth > 768 && nav.classList.contains('active')) {
-              closeNav();
-            }
-          }, 120);
-        }, false);
-
-        // si l'icone/fa dépendante n'existe pas, forcer l'icône initiale
-        if (!btn.innerHTML.trim()) btn.innerHTML = '<i class="fas fa-bars"></i>';
-      });
-    })();
-    </script>
-    <script src="js.js"></script>
-
+<!-- Bouton WhatsApp flottant -->
+<div class="wa-float" id="waFloat">
+    <div class="wa-float-menu">
+        <a href="https://wa.me/221773624539" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> 77 362 45 39
+        </a>
+        <a href="https://wa.me/221764685865" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> 76 468 58 65
+        </a>
+        <a href="https://wa.me/221777941218" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> 77 794 12 18
+        </a>
+    </div>
+    <button class="wa-float-toggle" id="waFloatToggle" aria-label="Contacter sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+</div>
+<script>
+(function(){
+    var wa = document.getElementById('waFloat');
+    var btn = document.getElementById('waFloatToggle');
+    if (!wa || !btn) return;
+    btn.addEventListener('click', function(){ wa.classList.toggle('open'); });
+    document.addEventListener('click', function(e){
+        if (!wa.contains(e.target)) wa.classList.remove('open');
+    });
+})();
+</script>
 
 </body>
 </html>

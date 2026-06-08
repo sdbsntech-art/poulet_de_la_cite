@@ -1,0 +1,51 @@
+{
+  "name": "Le Poulailler — Élevage d'Excellence",
+  "short_name": "Le Poulailler",
+  "description": "Élevage en plein air, poulets de chair de qualité supérieure. Commandez directement depuis l'app.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#5C3D2E",
+  "theme_color": "#F97316",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "categories": ["food", "shopping", "business"],
+  "icons": [
+    {
+      "src": "assettes/logo-le-poulailler.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assettes/logo-le-poulailler.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assettes/FB_IMG_1755942816079.jpg",
+      "sizes": "640x480",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "WhatsApp 77 362 45 39",
+      "url": "https://wa.me/221773624539",
+      "description": "Commander via WhatsApp"
+    },
+    {
+      "name": "Commander",
+      "url": "/index.html#order",
+      "description": "Passer une commande"
+    },
+    {
+      "name": "Galerie",
+      "url": "/index.html#products",
+      "description": "Voir notre élevage"
+    }
+  ]
+}

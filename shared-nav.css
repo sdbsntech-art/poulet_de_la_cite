@@ -1,0 +1,158 @@
+/* Navigation partagée — Le Poulailler */
+:root {
+    --nav-brown: #5C3D2E;
+    --nav-brown-dark: #3D2817;
+    --nav-orange: #F97316;
+    --nav-cream: #FAF6F1;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 1.5rem;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(92, 61, 46, 0.12);
+    box-shadow: 0 4px 20px rgba(92, 61, 46, 0.08);
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: var(--nav-brown);
+    transition: opacity 0.2s ease;
+}
+
+.site-logo:hover {
+    opacity: 0.85;
+}
+
+.site-logo img {
+    height: 46px;
+    width: auto;
+    display: block;
+}
+
+.site-logo span {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.site-logo small {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--nav-orange);
+    letter-spacing: 0.02em;
+}
+
+.btn-back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(135deg, var(--nav-orange), #ea580c);
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-back-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45);
+    color: #fff;
+}
+
+.btn-back-home i {
+    font-size: 0.85rem;
+}
+
+.btn-back-home.outline {
+    background: transparent;
+    color: var(--nav-brown);
+    border: 2px solid var(--nav-brown);
+    box-shadow: none;
+}
+
+.btn-back-home.outline:hover {
+    background: var(--nav-brown);
+    color: #fff;
+}
+
+.btn-back-home.block {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 2rem auto 0;
+}
+
+.btn-back-home.fixed {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    z-index: 7500;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+}
+
+.logo a,
+a.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo a:hover,
+a.logo-link:hover {
+    opacity: 0.9;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.footer-logo img {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .site-header {
+        padding: 0.75rem 1rem;
+    }
+
+    .site-logo img {
+        height: 38px;
+    }
+
+    .site-logo span {
+        font-size: 1.05rem;
+    }
+
+    .btn-back-home span.label {
+        display: none;
+    }
+
+    .btn-back-home {
+        padding: 0.6rem 0.85rem;
+    }
+}

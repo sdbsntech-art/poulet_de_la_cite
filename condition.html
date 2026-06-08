@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditions d'Utilisation - Poulet de la Cité</title>
+    <title>Conditions d'Utilisation - Le Poulailler</title>
+    <link rel="icon" type="image/png" href="assettes/logo-le-poulailler.png">
+    <link rel="apple-touch-icon" href="assettes/logo-le-poulailler.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared-nav.css">
     <style>
         .conditions-utilisation {
             max-width: 800px;
@@ -40,16 +44,7 @@
         .conditions-utilisation li {
             margin-bottom: 0.5rem;
         }
-        .back-link {
-            display: inline-block;
-            margin-top: 2rem;
-            color: #E74C3C;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
+        body { margin: 0; background: #FAF6F1; }
         .highlight {
             background-color: #f8f9fa;
             padding: 1rem;
@@ -67,17 +62,24 @@
     </style>
 </head>
 <body>
+    <header class="site-header">
+        <a href="index.html" class="site-logo">
+            <img src="assettes/logo-le-poulailler.png" alt="Le Poulailler">
+            <span>Le Poulailler</span>
+        </a>
+        <a href="index.html" class="btn-back-home"><i class="fas fa-home"></i> <span class="label">Retour à l'accueil</span></a>
+    </header>
     <section class="conditions-utilisation">
         <h1>CONDITIONS D'UTILISATION</h1>
 
         <div class="highlight">
             <p><strong>Dernière mise à jour :</strong> 28 août 2024</p>
-            <p>Bienvenue sur le site web de Poulet de la Cité. En accédant et en utilisant ce site, vous acceptez les présentes conditions d'utilisation. Veuillez les lire attentivement.</p>
+            <p>Bienvenue sur le site web de Le Poulailler. En accédant et en utilisant ce site, vous acceptez les présentes conditions d'utilisation. Veuillez les lire attentivement.</p>
         </div>
 
         <div class="article">
             <div class="article-title">Article 1 - Objet</div>
-            <p>Les présentes conditions régissent l'utilisation du site web Poulet de la Cité (ci-après "le Site") et l'achat de produits qui y sont proposés.</p>
+            <p>Les présentes conditions régissent l'utilisation du site web Le Poulailler (ci-après "le Site") et l'achat de produits qui y sont proposés.</p>
         </div>
 
         <div class="article">
@@ -140,7 +142,7 @@
 
         <div class="article">
             <div class="article-title">Article 10 - Propriété intellectuelle</div>
-            <p>L'ensemble du Site et son contenu (textes, images, logos, marques, etc.) sont la propriété exclusive de Poulet de la Cité et sont protégés par le droit de la propriété intellectuelle.</p>
+            <p>L'ensemble du Site et son contenu (textes, images, logos, marques, etc.) sont la propriété exclusive de Le Poulailler et sont protégés par le droit de la propriété intellectuelle.</p>
             <p>Toute reproduction, représentation, modification ou exploitation non autorisée est interdite.</p>
         </div>
 
@@ -198,7 +200,7 @@
             <div class="article-title">Article 18 - Contact</div>
             <p>Pour toute question concernant ces conditions d'utilisation :</p>
             <p><strong>Email :</strong> contactpouletdelacite@gmail.com<br>
-            <strong>Téléphone :</strong> +221 77 362 45 39<br>
+            <strong>Téléphone :</strong> +221 77 362 45 39 · +221 76 468 58 65 · +221 77 794 12 18<br>
             <strong>Adresse :</strong> Route de la cité eaux et forêt, 12100 Dalifort, Sénégal</p>
         </div>
 
@@ -206,8 +208,8 @@
             <p><strong>Important :</strong> En passant commande sur notre Site, vous certifiez avoir lu et accepté l'ensemble des présentes conditions d'utilisation.</p>
         </div>
 
-        <a href="index.html" class="back-link">← Retour à l'accueil</a>
+        <a href="index.html" class="btn-back-home block"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
     </section>
-    <script src="js.js"></script>
+    <a href="index.html" class="btn-back-home fixed"><i class="fas fa-home"></i> <span class="label">Accueil</span></a>
 </body>
 </html>

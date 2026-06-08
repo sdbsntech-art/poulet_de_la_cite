@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collaborations & Vente en Gros - Poulet de la Cité</title>
+    <title>Collaborations & Vente en Gros - Le Poulailler</title>
       <!-- Favicon de base -->
-<link rel="icon" type="image/x-icon" href="assettes/image.logo.png">
+<link rel="icon" type="image/x-icon" href="assettes/logo-le-poulailler.png">
 
 <!-- Pour les appareils Apple -->
-<link rel="apple-touch-icon" sizes="180x180" href="assettes/image.logo.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assettes/logo-le-poulailler.png">
 
 <!-- Pour Android -->
-<link rel="icon" type="image/png" sizes="192x192" href="assettes/image.logo.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assettes/logo-le-poulailler.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,7 @@
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared-nav.css">
     
     <style>
         /* ===== VARIABLES CSS PROFESSIONNELLES ===== */
@@ -921,19 +922,20 @@
     <header id="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <img src="assettes/image.logo.png" alt="">
-                    <span class="logo-text">Poulet de la Cité</span>
-                </div>
+                <a href="index.html" class="logo logo-link">
+                    <img src="assettes/logo-le-poulailler.png" alt="Le Poulailler">
+                    <span class="logo-text">Le Poulailler</span>
+                </a>
                 <nav id="nav">
                     <ul>
-                        <li><a href="#">Accueil</a></li>
+                        <li><a href="index.html">Accueil</a></li>
                         <li><a href="#partenariats">Types de Partenariats</a></li>
                         <li><a href="#avantages">Avantages</a></li>
                         <li><a href="#processus">Processus</a></li>
                         <li><a href="#contact">Devenir Partenaire</a></li>
                     </ul>
                 </nav>
+                <a href="index.html" class="btn-back-home"><i class="fas fa-home"></i> <span class="label">Accueil</span></a>
                 <a href="#contact" class="cta-button">Devenir Partenaire</a>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
@@ -1063,7 +1065,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Avantages Exclusifs</h2>
-                <p>Découvrez les bénéfices de collaborer avec Poulet de la Cité</p>
+                <p>Découvrez les bénéfices de collaborer avec Le Poulailler</p>
             </div>
             
             <div class="advantages-grid">
@@ -1165,7 +1167,7 @@
             <div class="form-container">
                 <form id="partnershipForm" action="https://formspree.io/f/xanpvked" method="POST" novalidate>
                     <!-- Formspree helper fields -->
-                    <input type="hidden" name="_subject" value="Demande partenariat - Poulet de la Cité">
+                    <input type="hidden" name="_subject" value="Demande partenariat - Le Poulailler">
                     <input type="hidden" name="_captcha" value="false">
                      <div class="form-row">
                          <div class="form-group">
@@ -1241,13 +1243,17 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Poulet de la Cité</h3>
+                    <a href="index.html" class="footer-logo">
+                        <img src="assettes/logo-le-poulailler.png" alt="Le Poulailler">
+                    </a>
+                    <h3>Le Poulailler</h3>
                     <p>Éleveur de poulets de chair d'exception depuis 2018. Engagement qualité, respect du bien-être animal et développement durable.</p>
                 </div>
 
                 <div class="footer-column">
                     <h3>Collaborations</h3>
                     <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Retour à l'accueil</a></li>
                         <li><a href="#partenariats">Types de Partenariats</a></li>
                         <li><a href="#avantages">Avantages</a></li>
                         <li><a href="#processus">Processus</a></li>
@@ -1258,7 +1264,11 @@
                 <div class="footer-column">
                     <h3>Contact Commercial</h3>
                     <p>Service Partenariats & Vente en Gros</p>
-                    <p><i class="fas fa-phone"></i> +221 77 362 45 39 & +221 78 557 72 29</p>
+                    <p><i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/221773624539" target="_blank" rel="noopener">77 362 45 39</a> ·
+                        <a href="https://wa.me/221764685865" target="_blank" rel="noopener">76 468 58 65</a> ·
+                        <a href="https://wa.me/221777941218" target="_blank" rel="noopener">77 794 12 18</a>
+                    </p>
                     <p><i class="fas fa-envelope"></i>contactpouletdelacite@gmail.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> Route de la cite eaux et foret, 12100 Dalifort</p>
                 </div>
@@ -1287,10 +1297,11 @@
             </div>
 
             <div class="copyright">
-                &copy; 2025 Poulet de la Cité - Collaborations & Vente en Gros. Tous droits réservés.
+                &copy; 2026 Le Poulailler - Collaborations & Vente en Gros. Tous droits réservés.
             </div>
         </div>
     </footer>
+    <a href="index.html" class="btn-back-home fixed"><i class="fas fa-home"></i> <span class="label">Accueil</span></a>
     <style>
          .legal-tech {
         text-align: center;

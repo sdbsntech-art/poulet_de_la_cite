@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Le Poulailler",
+    "slug": "le-poulailler",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5C3D2E"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lepoulailler.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#5C3D2E"
+      },
+      "package": "com.lepoulailler.app"
+    },
+    "web": {
+      "favicon": "./assets/logo.png",
+      "bundler": "metro",
+      "output": "single",
+      "name": "Le Poulailler",
+      "shortName": "Poulailler",
+      "description": "Élevage de poulets de chair en plein air",
+      "themeColor": "#F97316",
+      "backgroundColor": "#5C3D2E"
+    },
+    "scheme": "lepoulailler",
+    "plugins": ["expo-router"]
+  }
+}
